@@ -5,30 +5,70 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "CustomFont";
+  src: url("./fonts/Gabarito/Gabarito-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "CustomFont", sans-serif;
+  font-size: large;
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 7em;
+  padding: 0em;
   will-change: filter;
   transition: filter 300ms;
+  position: fixed;
+  left: 4%;
+  top: 0px;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  a:nth-of-type(1) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
@@ -39,4 +79,8 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.second_header {
+  color: #464fffaa;
 }
