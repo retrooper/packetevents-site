@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -58,6 +58,19 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        wiggle: {
+          "0%": { transform: "translate(1px, 1px) rotate(0deg)" },
+          "10%": { transform: "translate(-1px, -2px) rotate(-1deg" },
+          "20%": { transform: "translate(-3px, 0px) rotate(1deg)" },
+          "30%": { transform: "translate(3px, 2px) rotate(0deg)" },
+          "40%": { transform: "translate(1px, -1px) rotate(1deg)" },
+          "50%": { transform: "translate(-1px, 2px) rotate(-1deg)" },
+          "60%": { transform: "translate(-3px, 1px) rotate(0deg)" },
+          "70%": { transform: "translate(3px, 1px) rotate(-1deg)" },
+          "80%": { transform: "translate(-1px, -1px) rotate(1deg)" },
+          "90%": { transform: "translate(1px, 2px) rotate(0deg)" },
+          "100%": { transform: "translate(1px, -2px) rotate(-1deg)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -70,8 +83,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        wiggle: "wiggle infinite 0.2s linear",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
