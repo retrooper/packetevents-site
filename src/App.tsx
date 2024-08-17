@@ -1,5 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import githubLogo from "./assets/github-mark-white.svg";
+import packetEventsLogo from "./assets/packetevents.svg";
 import viteLogo from "/vite.svg";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -16,51 +18,60 @@ import {
 
 import { Separator } from "@/components/ui/separator";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+import React from "react";
+import { cn } from "@/lib/utils";
+
+("use client");
+
 function App() {
   const { setTheme } = useTheme();
   return (
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="space-y-7 space-x-20">
-          <div className="absolute top-0 left-0 hover:drop-shadow-[0_35px_35px_rgba(100,120,255,0.8)]">
+        <div className="space-y-7">
+          <div className="absolute top-1 left-0 hover:drop-shadow-[0_35px_35px_rgba(100,120,255,0.8)]">
             <div className="animate-[wiggle_infinite_15s_linear]">
-              <img
-                width="80"
-                height="80"
-                src="https://cdn.discordapp.com/attachments/852957712680484924/1274127144162951208/packetevents.svg?ex=66c11edf&is=66bfcd5f&hm=7aaa511b075461165f8f358941d28498008cc5651c9bcd4ac01b71c66da69027&"
-                alt="Logo"
-              />
+              <img width="80" height="80" src={packetEventsLogo} alt="Logo" />
             </div>
           </div>
-          <div className="pl-3">
+          <div className="absolute top-0 right-4 hover:drop-shadow-[0_35px_35px_rgba(100,120,255,0.8)]">
+            <div className="animate-[wiggle_infinite_15s_linear]">
+              <a
+                target="_blank"
+                href="https://github.com/retrooper/packetevents"
+              >
+                <img width="45" height="45" src={githubLogo} alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div className="pl-3 flex justify-center">
             <HoverCard>
               <Button variant="ghost">Docs</Button>
               <Button variant="ghost">Examples</Button>
-              <HoverCardTrigger asChild>
-                <Button variant="link">GitHub</Button>
-              </HoverCardTrigger>
-              <HoverCardContent className="w-80">
-                <div className="flex justify-between space-x-4">
-                  <Avatar>
-                    <AvatarImage src="https://github.com/packetevents.png" />
-                    <AvatarFallback>VC</AvatarFallback>
-                  </Avatar>
-                  <div className="space-y-1">
-                    <h4 className="text-sm font-semibold">
-                      @retrooper/packetevents
-                    </h4>
-                    <p className="text-sm">
-                      PacketEvents is emerging as a strong contender in the
-                      realm of Minecraft packet processing libraries.
-                    </p>
-                  </div>
-                </div>
-              </HoverCardContent>
             </HoverCard>
           </div>
         </div>
         <Separator className="my-5" />
-        <div className="flex h-5 items-center space-x-4 text-sm"></div>
+        <div className="flex justify-center mb-4 text-4xl leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+          <h1>Powerful, Versatile. </h1>
+        </div>
+        <div className="flex justify-center mb-4 text-4xl leading-none tracking-tight text-[#323becf3] md:text-5xl lg:text-6xl ">
+          <h1>PacketEvents</h1>
+        </div>
+        <div className="flex justify-center mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+          <h2>Achieve next-level networking by using PacketEvents.</h2>
+        </div>
+        <div className="flex justify-center space-x-5">
+          <Button variant="secondary">Downloads</Button>
+          <Button variant="secondary">Getting Started</Button>
+        </div>
       </ThemeProvider>
     </>
   );
