@@ -18,15 +18,44 @@ import {
 
 import { Separator } from "@/components/ui/separator";
 
+import { TrendingDown, TrendingUp } from "lucide-react";
+import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-import React from "react";
-import { cn } from "@/lib/utils";
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  ChartConfig,
+  ChartContainer,
+  ChartLegend,
+  ChartLegendContent,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart";
+const chartData = [
+  { month: "January", desktop: 186, mobile: 80 },
+  { month: "February", desktop: 305, mobile: 200 },
+  { month: "March", desktop: 237, mobile: 120 },
+  { month: "April", desktop: 73, mobile: 190 },
+  { month: "May", desktop: 209, mobile: 130 },
+  { month: "June", desktop: 214, mobile: 140 },
+];
+const chartConfig = {
+  desktop: {
+    label: "Desktop",
+    color: "hsl(var(--chart-1))",
+    icon: TrendingDown,
+  },
+  mobile: {
+    label: "Mobile",
+    color: "hsl(var(--chart-2))",
+    icon: TrendingUp,
+  },
+} satisfies ChartConfig;
 
 ("use client");
 
@@ -37,12 +66,12 @@ function App() {
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <div className="space-y-7">
           <div className="absolute top-1 left-0 hover:drop-shadow-[0_35px_35px_rgba(100,120,255,0.8)]">
-            <div className="animate-[wiggle_infinite_15s_linear]">
+            <div className="hover:animate-[wiggle_infinite_15s_linear]">
               <img width="80" height="80" src={packetEventsLogo} alt="Logo" />
             </div>
           </div>
           <div className="absolute top-0 right-4 hover:drop-shadow-[0_35px_35px_rgba(100,120,255,0.8)]">
-            <div className="animate-[wiggle_infinite_15s_linear]">
+            <div className="hover:animate-[wiggle_infinite_15s_linear]">
               <a
                 target="_blank"
                 href="https://github.com/retrooper/packetevents"
