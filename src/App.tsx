@@ -209,32 +209,32 @@ function App() {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <div className="flex justify-center mb-4 leading-none tracking-tight text-gray-900 lg:text-4xl dark:text-white pt-32">
-          <h1>What is in PacketEvents? </h1>
+        <div className="flex justify-center text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-zinc-400	 pt-24">
+          What you need to create applications that will thrive.
         </div>
-        <div className="flex justify-center space-x-5 pt-10">
-          <Card className="w-72">
+        <div className="flex justify-center space-x-5 pt-5">
+          <Card className="w-72 h-36 bg-[rgba(4,11,30,1)]	 border-0 hover:bg-slate-950 hover:drop-shadow-[0__1px__1px_rgba(100,120,255,0.7)] drop-shadow-[0_35px_35px_rgba(250,250,250,0.001)]">
             <CardHeader>
-              <CardTitle>Rich Features</CardTitle>
-              <CardDescription>Card Description</CardDescription>
+              <CardTitle>Free & Open Source</CardTitle>
+              <CardDescription>Respects your freedom</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Card Content</p>
+              <p>Transparent development</p>
             </CardContent>
             <CardFooter>
-              <p>Card Footer</p>
+              <p></p>
             </CardFooter>
           </Card>
-          <Card className="w-64">
+          <Card className="w-72 h-36 bg-[rgba(4,11,30,1)]	 border-0 hover:bg-slate-950 hover:drop-shadow-[0__1px__1px_rgba(100,120,255,0.7)] drop-shadow-[0_35px_35px_rgba(250,250,250,0.001)]">
             <CardHeader>
-              <CardTitle>Card Title</CardTitle>
-              <CardDescription>Card Description</CardDescription>
+              <CardTitle>Rich Features</CardTitle>
+              <CardDescription>Focus on Convenience</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Card Content</p>
+              <p>Intuitive integration</p>
             </CardContent>
             <CardFooter>
-              <p>Card Footer</p>
+              <p></p>
             </CardFooter>
           </Card>
         </div>
