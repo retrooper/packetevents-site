@@ -11,7 +11,7 @@ export default function Cards() {
   return (
     <>
       <div className="flex justify-center space-x-5 pt-5">
-        <Card className="w-72 h-36 bg-[rgba(4,11,30,1)]	hover:transition-shadow border-0 hover:bg-slate-950 hover:drop-shadow-[0__1px__1px_rgba(100,120,255,0.7)] drop-shadow-[0_35px_35px_rgba(250,250,250,0.001)]">
+        <Card className="w-72 h-36 bg-[rgba(4,11,30,1)] hover:transition-shadow border-0 hover:bg-slate-950 hover:drop-shadow-[0__1px__1px_rgba(100,120,255,0.7)] drop-shadow-[0_35px_35px_rgba(250,250,250,0.001)]">
           <CardHeader>
             <CardTitle>Free & Open Source</CardTitle>
             <CardDescription>Respects your freedom</CardDescription>

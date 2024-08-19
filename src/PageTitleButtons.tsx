@@ -10,6 +10,7 @@ import {
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { Link } from "lucide-react";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -41,7 +42,13 @@ export default function PageTitleButtons() {
   return (
     <>
       <div className="flex justify-center space-x-5">
-        <Button variant="secondary">Downloads</Button>
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://modrinth.com/plugin/packetevents"
+        >
+          <Button variant="secondary">Downloads</Button>
+        </a>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
