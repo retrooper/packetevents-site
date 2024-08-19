@@ -11,6 +11,7 @@ import PageHeader from "./PageHeader";
 import PageTitle from "./PageTitle";
 import PageTitleButtons from "./PageTitleButtons";
 import Cards from "./Cards";
+import SecondPageTitle from "./SecondPageTitle";
 import PageFooter from "./PageFooter";
 //Currently don't use theme selections
 import ThemeSelection from "./ThemeSelection";
@@ -35,9 +36,11 @@ export default function App() {
         <Cards />
         {/* Add a separator, but shift it down a little to make space*/}
         <div className="pt-24">
+          <SecondPageTitle />
+        </div>
+        <div className="pt-24">
           <Separator />
         </div>
-
         <PageFooter />
       </ThemeProvider>
     </>
