@@ -19,6 +19,7 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
   },
+  {/* Right now for simplicity, we make the first blog show up on /blog, later will change ofc*/}
   { path: "blog", element: <FirstBlog /> },
   { path: "blog/first-blog-post", element: <FirstBlog /> },
 ]);
