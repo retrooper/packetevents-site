@@ -39,6 +39,13 @@ export default function Header() {
           <HoverCard>
             <Button variant="ghost">Docs</Button>
             <Button variant="ghost">Examples</Button>
+            <Button variant="ghost">
+              <ul>
+                <li>
+                  <a href="blog">Blog</a>
+                </li>
+              </ul>
+            </Button>
           </HoverCard>
         </div>
       </div>

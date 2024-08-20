@@ -82,7 +82,14 @@ export default function PageTitleButtons() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            <Button variant="outline">FAQ</Button>
+
+            <Button variant="outline">
+              <ul>
+                <li>
+                  <a href="faq">FAQ</a>
+                </li>
+              </ul>
+            </Button>
           </NavigationMenuList>
         </NavigationMenu>
       </div>

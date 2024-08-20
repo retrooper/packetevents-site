@@ -7,16 +7,16 @@ import { useTheme } from "@/components/theme-provider";
 import { Separator } from "@/components/ui/separator";
 
 //My own files
-import PageHeader from "./PageHeader";
-import PageTitle from "./PageTitle";
-import PageTitleButtons from "./PageTitleButtons";
-import Cards from "./Cards";
-import SecondPageTitle from "./SecondPageTitle";
-import PageFooter from "./PageFooter";
+import PageHeader from "../PageHeader";
+import PageTitle from "../PageTitle";
+import PageTitleButtons from "../PageTitleButtons";
+import Cards from "../Cards";
+import SecondPageTitle from "../SecondPageTitle";
+import PageFooter from "../PageFooter";
 //Currently don't use theme selections
-import ThemeSelection from "./ThemeSelection";
-import SecondPageBody from "./SecondPageBody";
-import SecondPageQNA from "./SecondPageQNA";
+import ThemeSelection from "../ThemeSelection";
+import SecondPageBody from "../SecondPageBody";
+import SecondPageQNA from "../SecondPageQNA";
 
 export default function App() {
   return (
