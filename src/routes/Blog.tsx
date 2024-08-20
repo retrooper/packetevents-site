@@ -1,3 +1,11 @@
+import { PageHeader } from "@/components/ui/page-header";
+import PageTitle from "@/PageTitle";
+
 export default function Blog() {
-  return <>Hey my blog!</>;
+  return (
+    <>
+      <PageHeader />
+      <PageTitle />
+    </>
+  );
 }
