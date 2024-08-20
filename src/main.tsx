@@ -1,12 +1,12 @@
 import App from "./routes/App.tsx";
+import FAQ from "./routes/FAQ.tsx";
 import Error from "./routes/Error.tsx";
+import Blog from "./routes/Blog.tsx";
 
 import "./index.css";
 
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-
-import Blog from "./routes/Blog.tsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
@@ -19,9 +19,10 @@ const router = createBrowserRouter([
     /* Right now for simplicity, we make the first blog show up on /blog, later will change ofc*/
   },
   {
-    path: "blogs/:blogId",
+    path: "blog/:blogId",
     element: <Blog />,
   },
+  { path: "faq", element: <FAQ /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

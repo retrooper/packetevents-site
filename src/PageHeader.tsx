@@ -42,7 +42,7 @@ export default function Header() {
             <Button variant="ghost">
               <ul>
                 <li>
-                  <a href="blogs">Blog</a>
+                  <a href="blog">Blog</a>
                 </li>
               </ul>
             </Button>
