@@ -1,6 +1,5 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import PageHeader from "../PageHeader";
-import PageTitle from "@/PageTitle";
 import { Separator } from "@/components/ui/separator";
 import FirstBlog from "../blogs/first-blog-post.mdx";
 import SecondBlog from "../blogs/second-blog-post.mdx";

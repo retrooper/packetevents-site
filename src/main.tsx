@@ -8,7 +8,13 @@ import "./index.css";
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +33,22 @@ const router = createBrowserRouter([
     element: <BlogSummary />,
   },
   { path: "faq", element: <FAQ /> },
+  {
+    path: "docs",
+    element: (
+      <>
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://packetevents.gitbook.io/docs"
+        ></a>
+      </>
+    ),
+  },
+  {
+    path: "docs/installation",
+    element: <></>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

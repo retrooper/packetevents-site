@@ -67,17 +67,30 @@ export default function PageTitleButtons() {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="/docs" title="Installation">
-                    Re-usable components built using Radix UI and Tailwind CSS.
-                  </ListItem>
-                  <ListItem href="/docs/installation" title="Introduction">
-                    How to install dependencies and structure your app.
+                  <ListItem
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://packetevents.gitbook.io/docs/getting-started"
+                    title="Installation"
+                  >
+                    Installing PacketEvents as a Maven/Gradle dependency.
                   </ListItem>
                   <ListItem
-                    href="/docs/primitives/typography"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://packetevents.gitbook.io/docs"
+                    title="Introduction"
+                  >
+                    Learn of the essentials provided by PacketEvents.
+                  </ListItem>
+                  <ListItem
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://packetevents.gitbook.io/docs/advanced-packetevents-example-combining-our-knowledge"
                     title="Advanced Examples"
                   >
-                    Styles for headings, paragraphs, lists...etc
+                    Deepen your PacketEvents knowledge by studying some advanced
+                    examples.
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
