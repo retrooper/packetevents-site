@@ -10,7 +10,7 @@ export default function Header() {
       <div className="space-y-5">
         <div className="absolute top-7 left-0 hover:drop-shadow-[0_35px_35px_rgba(100,120,255,1)]">
           <div className="flex justify-center mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-200 select-none">
-            packetevents
+            <a href="/">packetevents</a>
           </div>
         </div>
         <div className="absolute top-0 right-4 hover:drop-shadow-[0_35px_35px_rgba(100,120,255,0.8)]">

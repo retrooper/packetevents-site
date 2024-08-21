@@ -2,7 +2,7 @@ import App from "./routes/App.tsx";
 import FAQ from "./routes/FAQ.tsx";
 import Error from "./routes/Error.tsx";
 import Blog from "./routes/Blog.tsx";
-
+import BlogSummary from "./routes/BlogSummary.tsx";
 import "./index.css";
 
 import * as React from "react";
@@ -21,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "blog/:blogId",
     element: <Blog />,
+  },
+  {
+    path: "blog",
+    element: <BlogSummary />,
   },
   { path: "faq", element: <FAQ /> },
 ]);
