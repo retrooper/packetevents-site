@@ -14,6 +14,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
+import PageFooter from "@/PageFooter";
 
 export default function FAQ() {
   return (
@@ -158,28 +159,30 @@ export default function FAQ() {
               </AccordionTrigger>
               <AccordionContent className="text-xl text-white">
                 <p className="text-yellow-400	">
-                  Ideally, this should be avoided.
+                  It's best to avoid shipping PacketEvents with your project.
                 </p>
                 <p>
-                  Keep in mind, you might not be the only one doing so, thus,
-                  ensuring that your users
+                  Ensuring your users only run a single instance of PacketEvents
                 </p>
                 <p>
-                  are running a singular instance of PacketEvents not only{" "}
-                  <span className="text-green-400	">enhances performance</span>
+                  will not only{" "}
+                  <span className="text-green-400	">boost performance</span> but
+                  also{" "}
+                  <span className="text-green-400	">
+                    streamline bug-reporting
+                  </span>
+                  .
                 </p>
-                <p>
-                  but also simplifies{" "}
-                  <span className="text-yellow-400	">bug-reporting</span>.
-                </p>
-                <p>
-                  Moreover, you won't have to update everytime we publish a new
-                  patch update.
-                </p>
+                Plus, you'll <span className="text-yellow-400	">save time </span>{" "}
+                by not needing to update with every new patch release.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>
+        <div className="pt-36">
+          <Separator />
+        </div>
+        <PageFooter />
       </ThemeProvider>
     </>
   );

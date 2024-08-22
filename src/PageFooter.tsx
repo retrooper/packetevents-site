@@ -16,22 +16,42 @@ export default function PageFooter() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className=" hover:underline">
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://packetevents.gitbook.io/docs/"
+                    className=" hover:underline"
+                  >
                     Docs
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://packetevents.gitbook.io/docs/getting-started"
+                    className="hover:underline"
+                  >
                     Getting Started
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://packetevents.github.io/"
+                    className="hover:underline"
+                  >
                     JavaDocs
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://bstats.org/plugin/bukkit/packetevents/11327"
+                    className="hover:underline"
+                  >
                     Statistics
                   </a>
                 </li>
@@ -43,12 +63,20 @@ export default function PageFooter() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://discord.gg/DVHxPPxHZc"
+                    className="hover:underline"
+                  >
                     Discord Server
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="mailto:retrooperdev@gmail.com"
+                    className="hover:underline"
+                  >
                     Contact Us
                   </a>
                 </li>
