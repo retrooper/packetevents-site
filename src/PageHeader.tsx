@@ -37,12 +37,28 @@ export default function Header() {
         </div>
         <div className="pl-3 flex justify-center">
           <HoverCard>
-            <Button variant="ghost">Docs</Button>
-            <Button variant="ghost">Examples</Button>
+            <Button variant="ghost">
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://packetevents.gitbook.io/docs/"
+              >
+                Docs
+              </a>
+            </Button>
+            <Button variant="ghost">
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://github.com/retrooper/packetevents-example"
+              >
+                Examples
+              </a>
+            </Button>
             <Button variant="ghost">
               <ul>
                 <li>
-                  <a href="blog">Blog</a>
+                  <a href="/blog">Blog</a>
                 </li>
               </ul>
             </Button>

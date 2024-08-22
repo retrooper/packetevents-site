@@ -16,7 +16,6 @@ import PageFooter from "../PageFooter";
 //Currently don't use theme selections
 import ThemeSelection from "../ThemeSelection";
 import SecondPageBody from "../SecondPageBody";
-import SecondPageQNA from "../SecondPageQNA";
 
 export default function App() {
   return (
@@ -41,7 +40,6 @@ export default function App() {
           {/* Add the second page (with images)*/}
           <SecondPageTitle />
           <SecondPageBody />
-          <SecondPageQNA />
         </div>
         <div className="pt-24">
           <Separator />

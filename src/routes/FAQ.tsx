@@ -109,6 +109,75 @@ export default function FAQ() {
                 Currently, the guide is still being worked on...
               </AccordionContent>
             </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>
+                Is PacketEvents Free Software?
+              </AccordionTrigger>
+              <AccordionContent className="text-xl text-white">
+                Yes, PacketEvents is{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://www.gnu.org/philosophy/free-sw.en.html"
+                  className="text-cyan-600 hover:drop-shadow-[0_35px_35px_rgba(150,170,255,1)]"
+                >
+                  Free Software
+                </a>
+                . It is licensed under the{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://www.gnu.org/licenses/gpl-3.0.en.html"
+                  className="text-cyan-600 hover:drop-shadow-[0_35px_35px_rgba(180,170,255,1)]"
+                >
+                  GPLv3
+                </a>
+                .
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger>
+                Does PacketEvents have a Discord Server?
+              </AccordionTrigger>
+              <AccordionContent className="text-xl text-white">
+                Join the{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://discord.gg/DVHxPPxHZc"
+                  className="text-cyan-600 hover:drop-shadow-[0_35px_35px_rgba(150,170,255,1)]"
+                >
+                  PacketEvents Discord Server
+                </a>{" "}
+                and receive community support!
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger>
+                Should I ship PacketEvents with my project?
+              </AccordionTrigger>
+              <AccordionContent className="text-xl text-white">
+                <p className="text-yellow-400	">
+                  Ideally, this should be avoided.
+                </p>
+                <p>
+                  Keep in mind, you might not be the only one doing so, thus,
+                  ensuring that your users
+                </p>
+                <p>
+                  are running a singular instance of PacketEvents not only{" "}
+                  <span className="text-green-400	">enhances performance</span>
+                </p>
+                <p>
+                  but also simplifies{" "}
+                  <span className="text-yellow-400	">bug-reporting</span>.
+                </p>
+                <p>
+                  Moreover, you won't have to update everytime we publish a new
+                  patch update.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </ThemeProvider>

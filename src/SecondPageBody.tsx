@@ -22,7 +22,7 @@ export default function SecondPageBody() {
         </AspectRatio>
       </div>
       <div className="pt-32 space-x-48 flex justify-right mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-        <ul className="pt-40">Minecraft Plugin Development</ul>
+        <ul className="pt-40">Cross-Platform Minecraft Plugin Development</ul>
         <AspectRatio ratio={16 / 5} className="bg-muted w-[400px]">
           <img
             src={pluginDevelopmentImage}
