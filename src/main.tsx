@@ -3,6 +3,7 @@ import FAQ from "./routes/FAQ.tsx";
 import Error from "./routes/Error.tsx";
 import Blog from "./routes/Blog.tsx";
 import BlogSummary from "./routes/BlogSummary.tsx";
+import Sponsors from "./routes/Sponsors.tsx";
 import "./index.css";
 
 import * as React from "react";
@@ -48,6 +49,14 @@ const router = createBrowserRouter([
   {
     path: "docs/installation",
     element: <></>,
+  },
+  {
+    path: "sponsors",
+    element: (
+      <>
+        <Sponsors />
+      </>
+    ),
   },
 ]);
 
