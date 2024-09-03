@@ -19,7 +19,7 @@ export default function PageFooter() {
                   <a
                     target="_blank"
                     rel="noreferrer noopener"
-                    href="https://packetevents.gitbook.io/docs/"
+                    href="https://docs.packetevents.com"
                     className=" hover:underline"
                   >
                     Docs
@@ -29,7 +29,7 @@ export default function PageFooter() {
                   <a
                     target="_blank"
                     rel="noreferrer noopener"
-                    href="https://packetevents.gitbook.io/docs/getting-started"
+                    href="https://docs.packetevents.com/docs/getting-started"
                     className="hover:underline"
                   >
                     Getting Started
@@ -39,7 +39,7 @@ export default function PageFooter() {
                   <a
                     target="_blank"
                     rel="noreferrer noopener"
-                    href="https://packetevents.github.io/"
+                    href="https://javadocs.packetevents.com"
                     className="hover:underline"
                   >
                     JavaDocs

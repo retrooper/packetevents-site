@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import discordLogo from "./assets/discord-mark-white.svg";
 import githubLogo from "./assets/github-mark-white.svg";
 
@@ -58,7 +59,7 @@ export default function Header() {
             <Button variant="ghost">
               <ul>
                 <li>
-                  <a href="/blog">Blog</a>
+                  <Link to="/blog">Blog</Link>
                 </li>
               </ul>
             </Button>

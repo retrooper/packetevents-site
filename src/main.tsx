@@ -26,32 +26,28 @@ const router = createBrowserRouter([
     /* Right now for simplicity, we make the first blog show up on /blog, later will change ofc*/
   },
   {
-    path: "blog/:blogId",
+    path: "/blog/:blogId",
     element: <Blog />,
   },
   {
-    path: "blog",
+    path: "/blog",
     element: <BlogSummary />,
   },
-  { path: "faq", element: <FAQ /> },
+  { path: "/faq", element: <FAQ /> },
   {
-    path: "docs",
+    path: "/docs",
     element: (
       <>
         <a
           target="_blank"
           rel="noreferrer noopener"
-          href="https://packetevents.gitbook.io/docs"
+          href="https://docs.packetevents.com"
         ></a>
       </>
     ),
   },
   {
-    path: "docs/installation",
-    element: <></>,
-  },
-  {
-    path: "sponsors",
+    path: "/sponsors",
     element: (
       <>
         <Sponsors />

@@ -10,8 +10,7 @@ import {
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { Link } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
@@ -99,7 +98,7 @@ export default function PageTitleButtons() {
             <Button variant="outline">
               <ul>
                 <li>
-                  <a href="faq">FAQ</a>
+                  <Link to="/faq">FAQ</Link>
                 </li>
               </ul>
             </Button>

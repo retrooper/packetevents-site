@@ -22,6 +22,7 @@ import githubLogo from "../assets/github-mark-white.svg";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import grapheneImage from "../assets/graphene_development_image.png";
 import pluginDevelopmentImage from "../assets/plugin_development_image.jpg";
+import { Link } from "react-router-dom";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -103,7 +104,7 @@ export default function Sponsors() {
               <Button variant="ghost">
                 <ul>
                   <li>
-                    <a href="/blog">Blog</a>
+                    <Link to="/blog">Blog</Link>
                   </li>
                 </ul>
               </Button>
