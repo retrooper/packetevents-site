@@ -2,7 +2,6 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { useTheme } from "@/components/theme-provider";
 import { Separator } from "@/components/ui/separator";
@@ -47,9 +46,8 @@ export default function App() {
         </div>
         <PageFooter />
       </ThemeProvider>
-      {/* Analytics & Speed Insights*/}
+      {/* Analytics*/}
       <Analytics />
-      <SpeedInsights />
     </>
   );
 }
