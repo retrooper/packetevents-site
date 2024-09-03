@@ -36,14 +36,14 @@ export default function Blog() {
   }
 
   function Test() {
-    if (location.pathname == "/blog/first-blog-post.mdx") {
+    if (location.pathname.endsWith("blog/first-blog-post.mdx")) {
       return (
         <div>
           <FirstBlog />
           <PostBlogSection />
         </div>
       );
-    } else if (location.pathname == "/blog/second-blog-post.mdx") {
+    } else if (location.pathname.endsWith("blog/second-blog-post.mdx")) {
       return (
         <div>
           <SecondBlog />
