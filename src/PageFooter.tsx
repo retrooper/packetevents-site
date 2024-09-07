@@ -29,7 +29,7 @@ export default function PageFooter() {
                   <a
                     target="_blank"
                     rel="noreferrer noopener"
-                    href="https://docs.packetevents.com/docs/getting-started"
+                    href="https://docs.packetevents.com/getting-started"
                     className="hover:underline"
                   >
                     Getting Started

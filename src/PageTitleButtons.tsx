@@ -69,7 +69,7 @@ export default function PageTitleButtons() {
                   <ListItem
                     target="_blank"
                     rel="noreferrer noopener"
-                    href="https://packetevents.gitbook.io/docs/getting-started"
+                    href="https://docs.packetevents.com/getting-started"
                     title="Installation"
                   >
                     Installing PacketEvents as a Maven/Gradle dependency.
@@ -77,7 +77,7 @@ export default function PageTitleButtons() {
                   <ListItem
                     target="_blank"
                     rel="noreferrer noopener"
-                    href="https://packetevents.gitbook.io/docs"
+                    href="https://docs.packetevents.com/"
                     title="Introduction"
                   >
                     Learn of the essentials provided by PacketEvents.
@@ -85,7 +85,7 @@ export default function PageTitleButtons() {
                   <ListItem
                     target="_blank"
                     rel="noreferrer noopener"
-                    href="https://packetevents.gitbook.io/docs/advanced-packetevents-example-combining-our-knowledge"
+                    href="https://docs.packetevents.com/advanced-packetevents-example-combining-our-knowledge"
                     title="Advanced Examples"
                   >
                     Deepen your PacketEvents knowledge by studying some advanced
