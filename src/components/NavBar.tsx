@@ -52,16 +52,26 @@ const NavBar = () => {
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-zinc-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-zinc-900 ">
-            <li>
+            <li className="flex items-center group cursor-pointer">
               <a
                 href="https://docs.packetevents.com/"
                 target="_"
-                className="block py-2 px-3 text-white rounded hover:bg-zinc-900 md:hover:bg-transparent md:hover:text-indigo-700 md:p-0 "
+                className="block py-2 px-3 text-white rounded hover:bg-zinc-900 md:hover:bg-transparent md:group-hover:text-indigo-700 md:p-0 
+                align-items-center"
               >
                 Docs
               </a>
-            </li>
-            <li>
+              <img
+                className="h-3.5 inline ml-2 group-hover:hidden"
+                src="arrow-up-right-from-square.svg"
+              />
+
+              <img
+                className="h-3.5 ml-2 group-hover:block hidden"
+                src="arrow-up-right-from-square-4338ca.svg"
+              />
+            </li>{" "}
+            <li className="flex items-center group cursor-pointer">
               <a
                 href="https://github.com/retrooper/packetevents-example"
                 target="_"
@@ -69,6 +79,15 @@ const NavBar = () => {
               >
                 Examples
               </a>
+              <img
+                className="h-3.5 inline ml-2 group-hover:hidden"
+                src="arrow-up-right-from-square.svg"
+              />
+
+              <img
+                className="h-3.5 ml-2 group-hover:block hidden"
+                src="arrow-up-right-from-square-4338ca.svg"
+              />
             </li>
             <li>
               <a
