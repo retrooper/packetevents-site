@@ -1,89 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: ["class"],
-  content: [
-    "./pages/**/*.{ts,tsx,md,mdx}",
-    "./components/**/*.{ts,tsx,md,mdx}",
-    "./app/**/*.{ts,tsx,md,mdx}",
-    "./src/**/*.{ts,tsx,md,mdx}",
-  ],
-  prefix: "",
+export default {
+  content: [],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
-    extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        wiggle: {
-          "0%, 100%": { transform: "translate(1px, -2px) rotate(-1deg)" },
-          "10%, 90%": { transform: "translate(-1px, -2px) rotate(-1deg)" },
-          "20%, 80%": { transform: "translate(-3px, 0px) rotate(1deg)" },
-          "30%, 70%": { transform: "translate(3px, 2px) rotate(0deg)" },
-          "40%, 60%": { transform: "translate(1px, -1px) rotate(1deg)" },
-          "50%": { transform: "translate(-1px, 2px) rotate(-1deg)" },
-        },
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        wiggle: "wiggle infinite 0.2s linear",
-      },
-    },
+    extend: {},
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require('@tailwindcss/typography')
-  ],
-};
+  plugins: [],
+}
+
