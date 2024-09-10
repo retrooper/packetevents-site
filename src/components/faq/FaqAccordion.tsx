@@ -2,8 +2,8 @@ import FaqItem from "./FaqItem";
 
 const FaqAccordion = () => {
   return (
-    <div className="px-5 w-full flex justify-center h-screen mb-40 bg-zinc-900">
-      <div className="group w-full max-w-4xl text-left pt-40">
+    <div className="px-5 w-full flex justify-center">
+      <div className="group w-full max-w-4xl text-left">
         <div id="accordion-collapse" data-accordion="collapse">
           <FaqItem index={0}>
             <span className="font-medium text-lg text-left">
