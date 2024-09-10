@@ -4,6 +4,7 @@ import ErrorPage from "./ErrorPage";
 import HomePage from "./HomePage";
 import FaqPage from "./FaqPage";
 import React from "preact/compat";
+import BlogPage from "./BlogPage";
 
 export function App() {
   const router = createBrowserRouter([
@@ -22,6 +23,11 @@ export function App() {
       index: true,
       path: "faq",
       element: <FaqPage />,
+    },
+    {
+      index: true,
+      path: "blog",
+      element: <BlogPage />,
     },
   ]);
 
