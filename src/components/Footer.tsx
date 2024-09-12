@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <nav className="bg-zinc-800 mt-20 dark:bg-gray-800 w-full z-20 bottom-0 start-0 border-b-0.5 border-zinc-800">
+      <nav className="bg-zinc-800 mt-20 w-full z-20 bottom-0 start-0 border-b-0.5 border-zinc-800">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="w-full flex flex-col md:flex-row justify-center gap-10 mt-10">
             <div className="flex flex-col">
