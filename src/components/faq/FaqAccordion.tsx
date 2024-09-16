@@ -12,7 +12,7 @@ const FaqAccordion = () => {
 
             <div className="text-left p-5 border-b border-zinc-800">
               <p class="mb-2 text-zinc-200 dark:text-gray-400">
-                You can download the latest relase at.{" "}
+                You can download the latest relase on {" "}
                 <a
                   href="https://ci.codemc.io/job/retrooper/job/packetevents/"
                   className="text-indigo-700"
@@ -31,7 +31,7 @@ const FaqAccordion = () => {
 
             <div className="text-left p-5 border-b border-zinc-800">
               <p class="mb-2 text-zinc-200 dark:text-gray-400">
-                You can download development builds at.{" "}
+                You can download development builds on {" "}
                 <a
                   href="https://ci.codemc.io/job/retrooper/job/packetevents/"
                   className="text-indigo-700"
