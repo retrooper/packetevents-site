@@ -1,16 +1,7 @@
-import path from "path"
-import react from "@vitejs/plugin-react"
-import { defineConfig } from "vite"
-import mdx from '@mdx-js/rollup'
+import { defineConfig } from 'vite'
+import preact from '@preact/preset-vite'
 
- 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(),
-    {enforce: 'pre', ...mdx({/* jsxImportSource: …, otherOptions… */})},
-  ],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+  plugins: [preact()],
 })
