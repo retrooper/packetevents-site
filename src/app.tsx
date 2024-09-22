@@ -5,6 +5,9 @@ import HomePage from "./HomePage";
 import FaqPage from "./FaqPage";
 import React from "preact/compat";
 import BlogPage from "./BlogPage";
+import { Release240 } from "./blogs/Release-2.4.0";
+import DefaultBlogPage from "./blogs/DefaultBlogPage";
+import { Release250 } from "./blogs/Release-2.5.0";
 
 export function App() {
   const router = createBrowserRouter([
@@ -14,20 +17,25 @@ export function App() {
       children: [
         {
           index: true,
-          path: "",
           element: <HomePage />,
         },
+        {
+          path: "faq",
+          element: <FaqPage />,
+        },
+        {
+          path: "blog",
+          element: <BlogPage />,
+        },
+        {
+          path: "blog/release-2-4-0",
+          element: <DefaultBlogPage blog={Release240} />,
+        },
+        {
+          path: "blog/release-2-5-0",
+          element: <DefaultBlogPage blog={Release250} />,
+        },
       ],
-    },
-    {
-      index: true,
-      path: "faq",
-      element: <FaqPage />,
-    },
-    {
-      index: true,
-      path: "blog",
-      element: <BlogPage />,
     },
   ]);
 

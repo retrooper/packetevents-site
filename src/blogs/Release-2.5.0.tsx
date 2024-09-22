@@ -3,7 +3,7 @@ import { Blog } from "./Blog";
 export const Release250: Blog = {
   date: new Date(2024, 2, 1),
   title: "PacketEvents 2.5.0 Release",
-  pagelink: "/",
+  pagelink: "/blog/release-2-5-0",
   brief: (
     <div className="text-white">
       <ul className="list-disc ml-5">
@@ -17,5 +17,5 @@ export const Release250: Blog = {
       </p>
     </div>
   ),
-  content: <div></div>,
+  content: null,
 };

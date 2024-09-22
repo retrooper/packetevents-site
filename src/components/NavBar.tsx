@@ -10,11 +10,25 @@ const NavBar = () => {
         </a>
 
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <div className="gap-3 mr-5 hidden md:flex">
+            <a href="https://discord.gg/DVHxPPxHZc" target="_">
+              <img
+                className="h-7 cursor-pointer"
+                src="/discord-icon-svgrepo-com.svg"
+              />
+            </a>
+            <a href="https://github.com/retrooper/packetevents" target="_">
+              <img
+                className="h-7 cursor-pointer"
+                src="/github-mark-white.svg"
+              />
+            </a>
+          </div>
           <a
             type="button"
             href="https://docs.packetevents.com/getting-started"
             target="_"
-            className="text-white bg-indigo-800 hover:bg-indigo-700 focus:ring-1 focus:outline-none 
+            className="hidden xs:block text-white bg-indigo-800 hover:bg-indigo-700 focus:ring-1 focus:outline-none 
               focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center "
           >
             Get started
@@ -63,12 +77,12 @@ const NavBar = () => {
               </a>
               <img
                 className="h-3.5 inline ml-2 group-hover:hidden"
-                src="arrow-up-right-from-square.svg"
+                src="/arrow-up-right-from-square.svg"
               />
 
               <img
                 className="h-3.5 ml-2 group-hover:block hidden"
-                src="arrow-up-right-from-square-4338ca.svg"
+                src="/arrow-up-right-from-square-4338ca.svg"
               />
             </li>{" "}
             <li className="flex items-center group cursor-pointer">
@@ -81,12 +95,12 @@ const NavBar = () => {
               </a>
               <img
                 className="h-3.5 inline ml-2 group-hover:hidden"
-                src="arrow-up-right-from-square.svg"
+                src="/arrow-up-right-from-square.svg"
               />
 
               <img
                 className="h-3.5 ml-2 group-hover:block hidden"
-                src="arrow-up-right-from-square-4338ca.svg"
+                src="/arrow-up-right-from-square-4338ca.svg"
               />
             </li>
             <li>
@@ -95,6 +109,44 @@ const NavBar = () => {
                 className="block py-2 px-3 text-white rounded hover:bg-zinc-900 md:hover:bg-transparent md:hover:text-indigo-700 md:p-0 "
               >
                 Blog
+              </a>
+            </li>
+            {/* Mobile Navbar items for github & discord icon */}
+            <li className="block xs:hidden w-full">
+              <a
+                type="button"
+                href="https://docs.packetevents.com/getting-started"
+                target="_"
+                className="w-full "
+              >
+                <div
+                  className="text-white bg-indigo-800 hover:bg-indigo-700 focus:ring-1 focus:outline-none 
+              focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                >
+                  <p>Get started</p>
+                </div>
+              </a>
+            </li>
+            <li className="md:hidden mt-2 flex justify-between gap-3">
+              <a
+                className="w-1/2 bg-zinc-900 px-3 py-2 rounded-lg"
+                href="https://discord.gg/DVHxPPxHZc"
+                target="_"
+              >
+                <img
+                  className="h-7 cursor-pointer mx-auto"
+                  src="/discord-icon-svgrepo-com.svg"
+                />
+              </a>
+              <a
+                className="w-1/2 bg-zinc-900 px-3 py-2 rounded-lg"
+                href="https://github.com/retrooper/packetevents"
+                target="_"
+              >
+                <img
+                  className="h-7 cursor-pointer mx-auto"
+                  src="/github-mark-white.svg"
+                />
               </a>
             </li>
           </ul>

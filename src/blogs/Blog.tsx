@@ -5,7 +5,7 @@ export type Blog = {
   date: Date;
   title: string;
   brief: JSX.Element;
-  content: JSX.Element;
+  content: JSX.Element | null;
   pagelink: string;
 };
 
@@ -15,15 +15,15 @@ export const BriefDisplay = (props: { blog: Blog }) => {
   const formattedDate = formatDateWithSuffix(blog.date);
 
   return (
-    <div className="border border-zinc-700 p-10 rounded-xl flex flex-col justify-between">
+    <div className="border border-zinc-700 p-2 xs:p-10 rounded-xl flex flex-col justify-between">
       <div className="">
-        <p className="text-zinc-300">{formattedDate}</p>
-        <p className="text-indigo-500 font-medium text-xl">{blog.title}</p>
+        <p className="text-zinc-300 text-xs xs:text-md">{formattedDate}</p>
+        <p className="text-indigo-500 font-medium xs:text-xl">{blog.title}</p>
 
         {blog.brief}
       </div>
 
-      <Link to="/">
+      <Link to={blog.pagelink}>
         <div className="w-full text-center bg-zinc-700 hover:bg-zinc-600 p-2 rounded-xl mt-5 bottom-0">
           <p className="text-white">Read More</p>
         </div>
@@ -50,7 +50,7 @@ function getDayWithSuffix(day: number) {
   return day + suffix(day);
 }
 
-function formatDateWithSuffix(date: Date) {
+export function formatDateWithSuffix(date: Date) {
   const options = { month: "long" };
   const day = date.getDate();
   const formattedDate = date.toLocaleDateString("en-US", options as any);
