@@ -5,7 +5,6 @@ import HomePage from "./HomePage";
 import FaqPage from "./FaqPage";
 import React from "preact/compat";
 import BlogPage from "./BlogPage";
-import { BlogPageDisplay } from "./blogs/Blog";
 import { Release240 } from "./blogs/Release-2.4.0";
 import DefaultBlogPage from "./blogs/DefaultBlogPage";
 import { Release250 } from "./blogs/Release-2.5.0";
