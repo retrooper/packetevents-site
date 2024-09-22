@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xs': '360px', // Example breakpoint for extra small devices
+        'xs': '375px', // Example breakpoint for extra small devices
       },
     },
   },
