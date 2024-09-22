@@ -14,11 +14,14 @@ const NavBar = () => {
             <a href="https://discord.gg/DVHxPPxHZc" target="_">
               <img
                 className="h-7 cursor-pointer"
-                src="discord-icon-svgrepo-com.svg"
+                src="/discord-icon-svgrepo-com.svg"
               />
             </a>
             <a href="https://github.com/retrooper/packetevents" target="_">
-              <img className="h-7 cursor-pointer" src="github-mark-white.svg" />
+              <img
+                className="h-7 cursor-pointer"
+                src="/github-mark-white.svg"
+              />
             </a>
           </div>
           <a
@@ -74,12 +77,12 @@ const NavBar = () => {
               </a>
               <img
                 className="h-3.5 inline ml-2 group-hover:hidden"
-                src="arrow-up-right-from-square.svg"
+                src="/arrow-up-right-from-square.svg"
               />
 
               <img
                 className="h-3.5 ml-2 group-hover:block hidden"
-                src="arrow-up-right-from-square-4338ca.svg"
+                src="/arrow-up-right-from-square-4338ca.svg"
               />
             </li>{" "}
             <li className="flex items-center group cursor-pointer">
@@ -92,12 +95,12 @@ const NavBar = () => {
               </a>
               <img
                 className="h-3.5 inline ml-2 group-hover:hidden"
-                src="arrow-up-right-from-square.svg"
+                src="/arrow-up-right-from-square.svg"
               />
 
               <img
                 className="h-3.5 ml-2 group-hover:block hidden"
-                src="arrow-up-right-from-square-4338ca.svg"
+                src="/arrow-up-right-from-square-4338ca.svg"
               />
             </li>
             <li>
@@ -132,7 +135,7 @@ const NavBar = () => {
               >
                 <img
                   className="h-7 cursor-pointer mx-auto"
-                  src="discord-icon-svgrepo-com.svg"
+                  src="/discord-icon-svgrepo-com.svg"
                 />
               </a>
               <a
@@ -142,7 +145,7 @@ const NavBar = () => {
               >
                 <img
                   className="h-7 cursor-pointer mx-auto"
-                  src="github-mark-white.svg"
+                  src="/github-mark-white.svg"
                 />
               </a>
             </li>
