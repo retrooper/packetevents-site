@@ -15,10 +15,10 @@ export const BriefDisplay = (props: { blog: Blog }) => {
   const formattedDate = formatDateWithSuffix(blog.date);
 
   return (
-    <div className="border border-zinc-700 p-10 rounded-xl flex flex-col justify-between">
+    <div className="border border-zinc-700 p-2 xs:p-10 rounded-xl flex flex-col justify-between">
       <div className="">
-        <p className="text-zinc-300">{formattedDate}</p>
-        <p className="text-indigo-500 font-medium text-xl">{blog.title}</p>
+        <p className="text-zinc-300 text-xs xs:text-md">{formattedDate}</p>
+        <p className="text-indigo-500 font-medium xs:text-xl">{blog.title}</p>
 
         {blog.brief}
       </div>
