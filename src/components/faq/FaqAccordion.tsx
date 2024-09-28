@@ -4,15 +4,15 @@ const FaqAccordion = () => {
   return (
     <div className="px-5 w-full flex justify-center">
       <div className="group w-full max-w-4xl text-left">
-        <div id="accordion-collapse" data-accordion="collapse">
-          <FaqItem index={0}>
+        <div id="accordion-open" data-accordion="open">
+          <FaqItem index={1}>
             <span className="font-medium text-lg text-left">
               Where can I download the latest PacketEvents release?
             </span>
 
             <div className="text-left p-5 border-b border-zinc-800">
               <p class="mb-2 text-zinc-200 dark:text-gray-400">
-                You can download the latest relase on {" "}
+                You can download the latest relase on{" "}
                 <a
                   href="https://ci.codemc.io/job/retrooper/job/packetevents/"
                   className="text-indigo-700"
@@ -24,14 +24,14 @@ const FaqAccordion = () => {
             </div>
           </FaqItem>
 
-          <FaqItem index={1}>
+          <FaqItem index={2}>
             <span className="font-medium text-lg text-left">
               Where can I find PacketEvents development builds?
             </span>
 
             <div className="text-left p-5 border-b border-zinc-800">
               <p class="mb-2 text-zinc-200 dark:text-gray-400">
-                You can download development builds on {" "}
+                You can download development builds on{" "}
                 <a
                   href="https://ci.codemc.io/job/retrooper/job/packetevents/"
                   className="text-indigo-700"
@@ -43,7 +43,7 @@ const FaqAccordion = () => {
             </div>
           </FaqItem>
 
-          <FaqItem index={2}>
+          <FaqItem index={3}>
             <span className="font-medium text-lg text-left">
               What Minecraft verson does PacketEvents support?
             </span>
@@ -58,7 +58,7 @@ const FaqAccordion = () => {
             </div>
           </FaqItem>
 
-          <FaqItem index={3}>
+          <FaqItem index={4}>
             <span className="font-medium text-lg text-left">
               Where can I learn to use PacketEvents?
             </span>
@@ -69,7 +69,7 @@ const FaqAccordion = () => {
             </div>
           </FaqItem>
 
-          <FaqItem index={4}>
+          <FaqItem index={5}>
             <span className="font-medium text-lg text-left">
               Is PacketEvents free software?
             </span>
@@ -97,7 +97,7 @@ const FaqAccordion = () => {
             </div>
           </FaqItem>
 
-          <FaqItem index={5}>
+          <FaqItem index={6}>
             <span className="font-medium text-lg text-left">
               Does PacketEvents have a Discord server?
             </span>
@@ -117,7 +117,7 @@ const FaqAccordion = () => {
             </div>
           </FaqItem>
 
-          <FaqItem index={6}>
+          <FaqItem index={7}>
             <span className="font-medium text-lg text-left">
               Should I ship PacketEvents with my project?
             </span>

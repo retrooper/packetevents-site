@@ -6,13 +6,13 @@ export interface faqProps {
 const FaqItem = (props: faqProps) => {
   return (
     <>
-      <h2 id={`accordion-collapse-heading-${props.index}`}>
+      <h2 id={`accordion-open-heading-${props.index}`}>
         <button
           type="button"
           class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white hover:bg-zinc-700 gap-3"
-          data-accordion-target={`#accordion-collapse-body-${props.index}`}
-          aria-expanded="true"
-          aria-controls={`accordion-collapse-body-${props.index}`}
+          data-accordion-target={`#accordion-open-body-${props.index}`}
+          aria-expanded="false"
+          aria-controls={`accordion-open-body-${props.index}`}
         >
           {props.children[0]}
           <svg
@@ -34,9 +34,9 @@ const FaqItem = (props: faqProps) => {
         </button>
       </h2>
       <div
-        id={`accordion-collapse-body-${props.index}`}
+        id={`accordion-open-body-${props.index}`}
         class="hidden"
-        aria-labelledby={`accordion-collapse-heading-${props.index}`}
+        aria-labelledby={`accordion-open-heading-${props.index}`}
       >
         {props.children[1]}
       </div>
