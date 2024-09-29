@@ -1,13 +1,13 @@
 # PacketEvents Website (Work in Progress)
-Welcome to the source code for the PacketEvents Website! This was engineered using React, Typescript, tailwind & shadcn components.
+Welcome to the source code for the PacketEvents Website!
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/54b0086e-bcb7-4dfc-97a7-29c0074f9cb6)
+
 
 # How to Build
 1. Clone the GitHub project
 2. Run `npm build`
 3. Host locally using `npm run dev`
 
-# Alternative Way to Host
-### 1. Compile the project and utilize GitHub pages
-### 2. Import project in Vercel & host
+# Alternative Way
+* Import project in Vercel, build and host
