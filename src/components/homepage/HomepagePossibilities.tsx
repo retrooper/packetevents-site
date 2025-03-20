@@ -6,7 +6,7 @@ const HomepagePossibilities = () => {
             flex flex-col gap-10"
       >
         <p className="text-white font-medium text-xl md:text-2xl">
-          Whats possible with{" "}
+          What's possible with{" "}
           <span className="text-indigo-700">PacketEvents</span>
         </p>
 
