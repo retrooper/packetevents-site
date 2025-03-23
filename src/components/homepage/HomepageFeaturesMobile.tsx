@@ -62,7 +62,7 @@ const HomePageFeaturesMobile = () => {
           bg-zinc-800 p-10 rounded-lg shadow-lg w-72"
         >
           <p className="text-white text-lg font-medium">Ubiquitous</p>
-          <p className="text-zinc-300">Powering over 90,000 players</p>
+          <p className="text-zinc-300">Powering over 1400,000 players</p>
 
           <p className="mt-5 text-sm text-white">
             Running on over 20,000 servers
