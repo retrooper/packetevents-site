@@ -5,9 +5,11 @@ import HomePage from "./HomePage";
 import FaqPage from "./FaqPage";
 import React from "preact/compat";
 import BlogPage from "./BlogPage";
-import { Release240 } from "./blogs/Release-2.4.0";
 import DefaultBlogPage from "./blogs/DefaultBlogPage";
+import { Release240 } from "./blogs/Release-2.4.0";
 import { Release250 } from "./blogs/Release-2.5.0";
+import { Release260 } from "./blogs/Release-2.6.0";
+import { Release270 } from "./blogs/Release-2.7.0";
 
 export function App() {
   const router = createBrowserRouter([
@@ -34,6 +36,14 @@ export function App() {
         {
           path: "blog/release-2-5-0",
           element: <DefaultBlogPage blog={Release250} />,
+        },
+        {
+          path: "blog/release-2-6-0",
+          element: <DefaultBlogPage blog={Release260} />,
+        },
+        {
+          path: "blog/release-2-7-0",
+          element: <DefaultBlogPage blog={Release270} />,
         },
       ],
     },
