@@ -10,7 +10,7 @@ import { Release240 } from "./blogs/Release-2.4.0";
 import { Release250 } from "./blogs/Release-2.5.0";
 import { Release260 } from "./blogs/Release-2.6.0";
 import { Release270 } from "./blogs/Release-2.7.0";
-import { Release270 } from "./blogs/Release-2.8.0";
+import { Release280 } from "./blogs/Release-2.8.0";
 
 export function App() {
   const router = createBrowserRouter([
