@@ -1,6 +1,6 @@
 import { Blog } from "./Blog";
 
-export const Release270: Blog = {
+export const Release280: Blog = {
   date: new Date(2025, 15, 5),
   title: "PacketEvents 2.8.0 Release",
   pagelink: "/blog/release-2-8-0",
