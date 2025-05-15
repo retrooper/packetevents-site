@@ -3,6 +3,7 @@ import { Release240 } from "./blogs/Release-2.4.0";
 import { Release250 } from "./blogs/Release-2.5.0";
 import { Release260 } from "./blogs/Release-2.6.0";
 import { Release270 } from "./blogs/Release-2.7.0";
+import { Release280 } from "./blogs/Release-2.8.0";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 
@@ -19,6 +20,7 @@ const BlogPage = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 mt-5 xs:mt-20 gap-5">
+              <BriefDisplay blog={Release280} />
               <BriefDisplay blog={Release270} />
               <BriefDisplay blog={Release260} />
               <BriefDisplay blog={Release250} />
