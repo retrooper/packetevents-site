@@ -45,7 +45,7 @@ const Footer = () => {
                 Discord Server
               </a>
               <a
-                href="mailto:retrooperdev@gmail.com"
+                href="mailto:retrooper@packetevents.com"
                 target="_"
                 className="text-zinc-300 font-medium"
               >
