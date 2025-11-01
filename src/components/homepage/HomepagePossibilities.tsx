@@ -18,7 +18,7 @@ const HomepagePossibilities = () => {
             </p>
           </div>
           <div className="md:w-1/2 h-80 rounded-xl">
-            <img src="src/assets/graphene_development_image.png" alt="Graphene"></img>
+            <img src="graphene_development_image.png" alt="Graphene"></img>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const HomepagePossibilities = () => {
           </div>
 
           <div className="md:w-1/2 h-100 rounded-xl">
-            <img src="src/assets/plugin_development_image.jpg" alt="Plugin Development"></img>
+            <img src="plugin_development_image.jpg" alt="Plugin Development"></img>
           </div>
         </div>
       </div>
