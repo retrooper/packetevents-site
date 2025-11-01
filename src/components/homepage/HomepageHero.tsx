@@ -15,7 +15,7 @@ const HomePageHero = () => {
           PacketEvents
         </p>
         <p className="mt-2 text-zinc-300 font-medium">
-          Achieve <span className="underline">next-level</span> networking.
+          Achieve next-level networking.
         </p>
 
         <div className="mt-10 flex flex-col xs:flex-row gap-2 md:gap-10 items-center">
