@@ -33,13 +33,10 @@ const HomePageHero = () => {
             href="https://docs.packetevents.com/getting-started"
             className="w-full xs:w-fit"
           >
-            <div
-              className="w-full text-white hover:bg-zinc-700 rounded-lg px-5 py-3
-                 cursor-pointer flex items-center gap-1 sm:gap-3
-                 border border-zinc-600 xs:border-none"
-            >
+                        <div className="text-white border rounded-lg px-5 py-3 border-zinc-600 hover:bg-zinc-600 cursor-pointer">
+
+            
               Getting started
-              <img className="h-4" src="angle-small-down.svg" />
             </div>
           </a>
 
