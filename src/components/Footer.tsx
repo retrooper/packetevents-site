@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <p className="text-white mt-10">©2024 retrooper</p>
+            <p className="text-white mt-10">©2025 retrooper</p>
           </div>
         </div>
       </nav>
