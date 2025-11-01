@@ -17,8 +17,9 @@ const HomepagePossibilities = () => {
               Writing a Minecraft server powered by Netty & PacketEvents
             </p>
           </div>
-
-          <div className="md:w-1/2 h-80 rounded-xl bg-white"></div>
+          <div className="md:w-1/2 h-80 rounded-xl">
+            <img src="src/assets/graphene_development_image.png" alt="Graphene"></img>
+          </div>
         </div>
 
         <div className="w-full flex flex-col md:flex-row gap-10">
@@ -26,11 +27,13 @@ const HomepagePossibilities = () => {
             <p className="text-white font-medium">Cross-platform Development</p>
             <p className="text-zinc-300">
               PacketEvents allows you to create versatile, cross-platform
-              minecraft plugins.
+              Minecraft plugins.
             </p>
           </div>
 
-          <div className="md:w-1/2 h-80 rounded-xl bg-white"></div>
+          <div className="md:w-1/2 h-100 rounded-xl">
+            <img src="src/assets/plugin_development_image.jpg" alt="Plugin Development"></img>
+          </div>
         </div>
       </div>
     </div>
