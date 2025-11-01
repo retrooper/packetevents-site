@@ -51,8 +51,8 @@ const FaqAccordion = () => {
             <div className="text-left p-5 border-b border-zinc-800">
               <p class="mb-2 text-zinc-200 dark:text-gray-400">
                 PacketEvents supports Minecraft versions
-                <span className="text-indigo-700"> 1.9</span>-
-                <span className="text-indigo-700">1.21.4 </span>
+                <span className="text-indigo-700"> 1.8</span>-
+                <span className="text-indigo-700">1.21.10 </span>
                 Java Edition.
               </p>
             </div>
