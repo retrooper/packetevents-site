@@ -14,7 +14,7 @@ const FaqAccordion = () => {
               <p class="mb-2 text-zinc-200 dark:text-gray-400">
                 You can download the latest relase on{" "}
                 <a
-                  href="https://ci.codemc.io/job/retrooper/job/packetevents/"
+                  href="https://modrinth.com/plugin/packetevents"
                   className="text-indigo-700"
                 >
                   Modrinth
