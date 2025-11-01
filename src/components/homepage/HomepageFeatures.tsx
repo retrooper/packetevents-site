@@ -40,7 +40,7 @@ const HomePageFeatures = () => {
               <p className="text-zinc-300">Powering over 140,000 players</p>
 
               <p className="mt-5 text-sm text-white">
-                Running on over 20,000 servers
+                Running on over 30,000 servers
               </p>
             </div>
             <div className="bg-zinc-800 p-10 rounded-lg shadow-lg w-72">
