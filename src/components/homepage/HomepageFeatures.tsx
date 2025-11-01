@@ -33,7 +33,7 @@ const HomePageFeatures = () => {
               <p className="text-white text-lg font-medium">Portable</p>
               <p className="text-zinc-300">Write once, run anywhere</p>
 
-              <p className="mt-5 text-sm text-white">Transparent development</p>
+              <p className="mt-5 text-sm text-white">Cross-platform</p>
             </div>
             <div className="bg-zinc-800 p-10 rounded-lg shadow-lg w-72">
               <p className="text-white text-lg font-medium">Ubiquitous</p>

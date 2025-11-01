@@ -54,7 +54,7 @@ const HomePageFeaturesMobile = () => {
           <p className="text-white text-lg font-medium">Portable</p>
           <p className="text-zinc-300">Write once, run anywhere</p>
 
-          <p className="mt-5 text-sm text-white">Transparent development</p>
+          <p className="mt-5 text-sm text-white">Cross-platform</p>
         </div>
 
         <div
