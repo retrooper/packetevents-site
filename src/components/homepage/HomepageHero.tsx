@@ -4,7 +4,7 @@ const HomePageHero = () => {
       <div className="group w-full max-w-4xl text-center pt-40 items-center flex flex-col relative">
         <div className="rounded-full border border-zinc-600 w-fit px-3 py-2">
           <p className="text-zinc-300">
-            Powering over <span className="text-white">140,000</span> players
+            Powering over <span className="text-white">40,000</span> servers
           </p>
         </div>
 
