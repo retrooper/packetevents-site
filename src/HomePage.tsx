@@ -24,15 +24,18 @@ const HomePage = () => {
         <HomepagePossibilities />
       </section>
 
-      {/* IMPORTANT: constrain the frame */}
       <section className="bg-zinc-900 py-20">
         <div className="relative h-[500px] w-full max-w-6xl mx-auto">
           <GitBookFrame
-  greeting="Hi! How can I help?"
-  tabs={["search", "chat"]}
-  actions={[]}
-  tools={[]}
-/>
+            greeting={{
+              title: "Hi!",
+              subtitle: "How can I help you?",
+            }}
+            tabs={["assistant", "docs"]}
+            actions={[]}
+            tools={[]}
+            suggestions={[]}
+          />
         </div>
       </section>
 
