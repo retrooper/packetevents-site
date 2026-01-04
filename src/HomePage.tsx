@@ -28,12 +28,11 @@ const HomePage = () => {
       <section className="bg-zinc-900 py-20">
         <div className="relative h-[500px] w-full max-w-6xl mx-auto">
           <GitBookFrame
-            suggestions={[
-              "Help me get started",
-              "What can I ask you?",
-              "Show me tips and tricks",
-            ]}
-          />
+  greeting="Hi! How can I help?"
+  tabs={["search", "chat"]}
+  actions={[]}
+  tools={[]}
+/>
         </div>
       </section>
 
