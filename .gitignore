@@ -200,7 +200,7 @@ fabric.properties
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
@@ -476,3 +476,4 @@ run/
 .idea/
 next-env.d.ts
 *.iml
+.astro/

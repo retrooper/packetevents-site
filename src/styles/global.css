@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+@import "@fontsource/poppins/200.css";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/poppins/800.css";
+@import "@fontsource/poppins/900.css";
+
+@theme {
+    --font-sans: "Poppins", sans-serif;
+    --breakpoint-xs: 24rem;
+}
+
+html {
+    background-color: #18181b;
+}
+
+.blog-content {
+    color: #fff;
+}
+.blog-content ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+}
+.blog-content p {
+    margin-top: 1.25rem;
+}
+.blog-content a {
+    color: #6366f1;
+}
+.blog-content a:hover {
+    text-decoration: underline;
+}
