@@ -12,7 +12,10 @@ const rendered = await Promise.all(posts.map(async (post) =>
     ({post, Content: (await render(post)).Content})));
 ---
 
-<BaseLayout title="Blog">
+<BaseLayout
+    title="Blog"
+    description="Latest packetevents release announcements and news about the Minecraft Java Edition protocol library."
+>
     <section class="w-full flex justify-center">
         <div class="w-full max-w-6xl items-center flex flex-col gap-10">
             <Header>Latest packetevents news</Header>

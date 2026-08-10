@@ -3,6 +3,7 @@ import {type DataEntryMap, getCollection, render} from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import type {GetStaticPathsResult} from "astro";
 import LinkButton from "../../components/common/LinkButton.astro";
+import {absoluteUrl, blogPosting, breadcrumb} from "../../scripts/seo.ts";
 
 export const getStaticPaths = async (): Promise<GetStaticPathsResult> => {
     const posts = await getCollection("blog");
@@ -19,9 +20,32 @@ interface Props {
 const {post} = Astro.props;
 const {Content} = await render(post);
 const formattedDate = post.data.date.toLocaleDateString("en-US", {day: "numeric", month: "long", year: "numeric"});
+
+const postUrl = absoluteUrl(`/blog/${post.id}/`);
+const description = post.data.summary ?? `packetevents ${post.data.title}`;
+
+const structuredData = [
+    blogPosting({
+        title: post.data.title,
+        description: post.data.summary,
+        url: postUrl,
+        datePublished: post.data.date,
+    }),
+    breadcrumb([
+        {name: "Home", url: absoluteUrl("/")},
+        {name: "Blog", url: absoluteUrl("/blog/")},
+        {name: post.data.title, url: postUrl},
+    ]),
+];
 ---
 
-<BaseLayout title={post.data.title}>
+<BaseLayout
+    title={post.data.title}
+    description={description}
+    type="article"
+    publishedTime={post.data.date}
+    structuredData={structuredData}
+>
     <section class="w-full flex justify-center">
         <div class="w-full max-w-4xl">
             <p class="opacity-80 text-center text-sm select-none">{formattedDate}</p>

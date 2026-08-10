@@ -3,9 +3,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Features from "../components/Features.astro";
 import Possibilities from "../components/Possibilities.astro";
+import {organization, website} from "../scripts/seo.ts";
 ---
 
-<BaseLayout>
+<BaseLayout structuredData={[website(), {"@context": "https://schema.org", ...organization()}]}>
     <Hero />
     <Features />
     <Possibilities />

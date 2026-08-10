@@ -1,10 +1,23 @@
 ---
+import {getCollection} from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import FaqAccordion from "../components/FaqAccordion.astro";
 import Header from "../components/common/Header.astro";
+import {faqPage} from "../scripts/seo.ts";
+
+const entries = (await getCollection("faq")).sort((a, b) =>
+    a.data.question.localeCompare(b.data.question));
+
+const faqStructuredData = faqPage(
+    entries.map((entry) => ({question: entry.data.question, body: entry.body})),
+);
 ---
 
-<BaseLayout title="FAQ">
+<BaseLayout
+    title="FAQ"
+    description="Frequently asked questions about packetevents, the Minecraft Java Edition protocol library - Minecraft version support, installation, downloads, javadocs and more."
+    structuredData={faqStructuredData}
+>
     <section class="flex flex-col gap-10">
         <Header>Frequently Asked Questions</Header>
         <FaqAccordion/>
