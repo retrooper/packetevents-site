@@ -29,6 +29,9 @@ const formattedDate = post.data.date.toLocaleDateString("en-US", {day: "numeric"
                 {post.data.title}
             </h1>
 
+            {post.data.summary &&
+                <p class="opacity-80 text-center text-lg mt-3">{post.data.summary}</p>}
+
             <div class="blog-content mt-5">
                 <Content/>
             </div>
