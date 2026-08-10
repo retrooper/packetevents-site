@@ -18,7 +18,7 @@ const rendered = await Promise.all(posts.map(async (post) =>
             <Header>Latest packetevents news</Header>
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                 {rendered.map(({post, Content}) => (
-                    <Card title={post.data.title} date={post.data.date} href={`/blog/${post.id}`}>
+                    <Card title={post.data.title} date={post.data.date} href={`/blog/${post.id}/`}>
                         {post.data.summary ??
                             <Content/>}
                     </Card>
