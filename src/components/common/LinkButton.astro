@@ -1,0 +1,17 @@
+---
+import Button, {type buttonColor} from "./Button.astro";
+import ArrowUpRightFromSquare from "../../assets/arrow-up-right-from-square.svg";
+
+interface Props extends astroHTML.JSX.AnchorHTMLAttributes {
+    color: buttonColor;
+    external?: boolean;
+}
+
+const {color, class: clazz,external, ...other} = Astro.props
+---
+
+<Button tag="a" color={color} class={`flex items-center ${clazz??""}`} {...other}>
+    <slot/>
+    {external &&
+        <ArrowUpRightFromSquare class="h-4 inline ml-2" aria-hidden/>}
+</Button>

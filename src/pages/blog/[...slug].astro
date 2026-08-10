@@ -1,41 +1,42 @@
 ---
-import {getCollection, render} from "astro:content";
+import {type DataEntryMap, getCollection, render} from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import {formatDateWithSuffix} from "../../scripts/date";
+import type {GetStaticPathsResult} from "astro";
+import LinkButton from "../../components/common/LinkButton.astro";
 
-export async function getStaticPaths() {
+export const getStaticPaths = async (): Promise<GetStaticPathsResult> => {
     const posts = await getCollection("blog");
     return posts.map((post) => ({
         params: {slug: post.id},
         props: {post},
     }));
+};
+
+interface Props {
+    post: DataEntryMap["blog"][string];
 }
 
 const {post} = Astro.props;
 const {Content} = await render(post);
-const formattedDate = formatDateWithSuffix(post.data.date);
+const formattedDate = post.data.date.toLocaleDateString("en-US", {day: "numeric", month: "long", year: "numeric"});
 ---
 
-<BaseLayout title={`PacketEvents - ${post.data.title}`}>
-    <section class="w-full pt-20 xs:pt-40">
-        <div class="md:mx-auto max-w-4xl m-5">
-            <a href="/blog">
-                <p class="text-white">&lt; Back</p>
-            </a>
+<BaseLayout title={post.data.title}>
+    <section class="w-full flex justify-center">
+        <div class="w-full max-w-4xl">
+            <p class="opacity-80 text-center text-sm select-none">{formattedDate}</p>
+            <h1 class="text-primary text-center font-medium text-3xl xs:text-4xl">
+                {post.data.title}
+            </h1>
 
-            <br />
-            <div class="mx-auto">
-                <p class="text-zinc-300 text-center text-xs">{formattedDate}</p>
-                <p
-                    class="text-indigo-500 text-center font-medium text-2xl xs:text-4xl"
-                >
-                    {post.data.title}
-                </p>
-
-                <div class="blog-content mt-5 text-white">
-                    <Content />
-                </div>
+            <div class="blog-content mt-5">
+                <Content/>
             </div>
+
+            {post.data.downloadLink &&
+                <div class="mt-8 w-full flex justify-center text-xl font-medium">
+                    <LinkButton href={post.data.downloadLink} target="_" color="primary" external>Download</LinkButton>
+                </div>}
         </div>
     </section>
 </BaseLayout>

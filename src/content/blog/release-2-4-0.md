@@ -1,5 +1,5 @@
 ---
-title: "PacketEvents 2.4.0 Release"
+title: "Release 2.4.0"
 date: 2024-02-01
 ---
 

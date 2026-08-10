@@ -7,7 +7,16 @@ const blog = defineCollection({
     schema: z.object({
         title: z.string(),
         date: z.coerce.date(),
+        summary: z.string().optional(),
+        downloadLink: z.url().optional(),
     }),
 });
 
-export const collections = {blog};
+const faq = defineCollection({
+    loader: glob({pattern: "**/*.md", base: "./src/content/faq"}),
+    schema: z.object({
+        question: z.string(),
+    }),
+});
+
+export const collections = {blog, faq};

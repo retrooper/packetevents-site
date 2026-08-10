@@ -1,64 +1,41 @@
 ---
+import LinkButton from "./common/LinkButton.astro";
+import {playerCount, serverCount} from "../scripts/bstats.ts";
 ---
 
-<section>
-    <div class="px-5 w-full flex justify-center bg-zinc-900">
-        <div
-            class="w-full max-w-4xl text-center pt-40 items-center flex flex-col"
-        >
-            <div class="rounded-full border border-zinc-600 w-fit px-3 py-2">
-                <p class="text-zinc-300">
-                    Powering over <span class="text-white">40,000</span> servers
-                </p>
-            </div>
+<header class="w-full flex justify-center">
+    <div class="w-full max-w-4xl text-center items-center flex flex-col">
+        <h1 class="text-white text-4xl font-medium">Powerful, Versatile</h1>
+        <h2 class="mt-5 text-primary text-3xl xs:text-5xl md:text-6xl font-bold">
+            packetevents
+        </h2>
+        <h3 class="mt-2 text-zinc-300 font-medium">
+            Achieve next-level networking.
+        </h3>
 
-            <p class="mt-10 text-white text-4xl font-medium">
-                Powerful, Versatile
-            </p>
-            <p
-                class="mt-5 text-indigo-700 text-3xl xs:text-5xl md:text-6xl font-bold"
+        <p class="mt-5 rounded-full border border-white/60 w-fit px-3 py-2 select-none text-white/80">
+            Powering over <span class="text-white">{playerCount}</span> players
+            <span class="not-xs:hidden"> on <span class="text-white">{serverCount}</span> servers</span>
+        </p>
+
+        <div class="mt-5 flex flex-col xs:flex-row gap-2 xs:items-center">
+            <LinkButton
+                href="https://modrinth.com/plugin/packetevents" target="_"
+                color="gray" external
+                class="font-medium justify-center"
             >
-                PacketEvents
-            </p>
-            <p class="mt-2 text-zinc-300 font-medium">
-                Achieve next-level networking.
-            </p>
-
-            <div
-                class="mt-10 flex flex-col xs:flex-row gap-2 md:gap-10 items-center"
+                Downloads
+            </LinkButton>
+            <LinkButton
+                href="https://docs.packetevents.com/getting-started" target="_"
+                color="gray" external
+                class="font-medium justify-center"
             >
-                <a
-                    href="https://modrinth.com/plugin/packetevents"
-                    target="_"
-                    class="w-full xs:w-fit"
-                >
-                    <div
-                        class="w-full text-white text-sm font-medium rounded-lg bg-zinc-700 hover:bg-zinc-800 px-5 py-3 cursor-pointer"
-                    >
-                        Downloads
-                    </div>
-                </a>
-
-                <a
-                    href="https://docs.packetevents.com/getting-started"
-                    target="_"
-                    class="w-full xs:w-fit"
-                >
-                    <div
-                        class="text-white border rounded-lg px-5 py-3 border-zinc-600 hover:bg-zinc-600 cursor-pointer"
-                    >
-                        Getting started
-                    </div>
-                </a>
-
-                <a href="/faq" class="w-full xs:w-fit">
-                    <div
-                        class="text-white border rounded-lg px-5 py-3 border-zinc-600 hover:bg-zinc-600 cursor-pointer"
-                    >
-                        FAQ
-                    </div>
-                </a>
-            </div>
+                Getting started
+            </LinkButton>
+            <LinkButton href="/faq" color="gray" class="font-medium justify-center">
+                FAQ
+            </LinkButton>
         </div>
     </div>
-</section>
+</header>

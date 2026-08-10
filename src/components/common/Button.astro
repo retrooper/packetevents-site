@@ -1,0 +1,24 @@
+---
+const buttonColors = {
+    primary: "text-white bg-primary not-disabled:hover:bg-primary/80",
+    gray: "text-white bg-primary-gray not-disabled:hover:bg-primary-gray/60",
+    dark: "text-white bg-primary-dark not-disabled:hover:bg-primary-gray",
+    invisible: "text-white not-disabled:hover:bg-white/10",
+};
+export type buttonColor = keyof typeof buttonColors
+
+interface Props extends astroHTML.JSX.HTMLAttributes {
+    tag?: string;
+    color: buttonColor;
+    disabled?: boolean;
+}
+
+const {tag: Tag = "button", color, class: clazz, ...other} = Astro.props;
+---
+
+<Tag
+    {...other}
+    class={`${buttonColors[color]} not-disabled:cursor-pointer transition-colors rounded-xl px-4 py-2 text-center ${clazz ?? ""}`}
+>
+    <slot/>
+</Tag>

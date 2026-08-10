@@ -1,0 +1,31 @@
+---
+import Button from "./Button.astro";
+
+interface Props {
+    title?: string;
+    date?: Date;
+    href?: string;
+    hrefName?: string;
+}
+
+const {title, date, href, hrefName = "Read More"} = Astro.props;
+const Tag = href ? "a" : "div";
+---
+
+<Tag href={href??undefined} class="border border-white/20 p-5 xs:p-10 rounded-xl flex flex-col gap-5 justify-between hover:opacity-85 transition-opacity">
+    <div>
+        {date && <p class="opacity-80 text-sm xs:text-md select-none">
+            {date.toLocaleDateString("en-US", {day: "numeric", month: "long", year: "numeric"})}
+        </p>}
+        {title && <h3 class={`${href?"text-primary":"text-primary-light"} font-medium xs:text-xl`}>
+            {title}
+        </h3>}
+        <div class={`blog-content ${title || date ? "mt-3" : ""}`}>
+            <slot/>
+        </div>
+    </div>
+    {href&&
+        <Button color="gray" class="justify-center text-lg" disabled>
+            {hrefName}
+        </Button>}
+</Tag>

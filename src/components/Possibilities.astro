@@ -5,38 +5,33 @@ import randomDevelopmentImage from "../assets/plugin_development_image.jpg"
 
 ---
 
-<section class="bg-zinc-900">
-    <div
-        class="w-full max-w-4xl mx-auto text-center px-10 md:px-0 mt-10 md:mt-32 flex flex-col gap-10"
-    >
-        <p class="text-white font-medium text-xl md:text-2xl">
-            What's possible with <span class="text-indigo-700">PacketEvents</span>
-        </p>
+<section class="w-full max-w-5xl mx-auto mt-10 flex flex-col gap-10">
+    <h1 class="text-center font-medium text-xl md:text-2xl">
+        What's possible with <span class="text-primary">packetevents</span>
+    </h1>
 
-        <div class="w-full flex flex-col md:flex-row gap-10">
-            <div class="flex flex-col text-left md:w-1/2">
-                <p class="text-white font-medium">Minecraft Server</p>
-                <p class="text-zinc-300">
-                    Writing a Minecraft server powered by Netty & PacketEvents
-                </p>
-            </div>
-            <div class="md:w-1/2 rounded-xl overflow-hidden">
-                <Picture  src={grapheneDevelopmentImage} formats={["avif","webp"]} alt="Image showing Graphene development"/>
-            </div>
+    <div class="w-full flex flex-col md:flex-row gap-10">
+        <div class="flex flex-col text-left md:w-1/2">
+            <p class="font-medium">Cross-platform Development</p>
+            <p class="text-white/80">
+                PacketEvents enables the creation of versatile, cross-platform Minecraft plugins and mods
+                by abstracting networking at a cross-platform level.
+            </p>
         </div>
+        <div class="md:w-1/2 rounded-lg overflow-hidden">
+            <Picture src={randomDevelopmentImage} formats={["avif","webp"]} alt="A Laptop with some random source code on the screen"/>
+        </div>
+    </div>
 
-        <div class="w-full flex flex-col md:flex-row gap-10">
-            <div class="flex flex-col text-left md:w-1/2">
-                <p class="text-white font-medium">Cross-platform Development</p>
-                <p class="text-zinc-300">
-                    PacketEvents allows you to create versatile, cross-platform
-                    Minecraft plugins.
-                </p>
-            </div>
-
-            <div class="md:w-1/2 rounded-xl overflow-hidden">
-                <Picture src={randomDevelopmentImage} formats={["avif","webp"]} alt="Image showing a Laptop with some random source code on the screen"/>
-            </div>
+    <div class="w-full flex flex-col md:flex-row gap-10">
+        <div class="flex flex-col text-left md:w-1/2">
+            <p class="font-medium">Minecraft Server</p>
+            <p class="text-white/80">
+                Writing a Minecraft server powered by Netty and packetevents without linking against any Vanilla code.
+            </p>
+        </div>
+        <div class="md:w-1/2 rounded-lg overflow-hidden">
+            <Picture  src={grapheneDevelopmentImage} formats={["avif","webp"]} alt="Graphene development"/>
         </div>
     </div>
 </section>

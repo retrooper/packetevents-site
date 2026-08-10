@@ -44,7 +44,7 @@ const /**@type string*/tag = release.tag_name;
 const version = tag.replace(/^v/, "");
 const filename = tagToFilename(tag);
 const filepath = join(BLOG_DIR, filename);
-const title = `PacketEvents ${version} Release`;
+const title = `Release ${version}`;
 const date = formatDate(release.published_at);
 
 if (!await stat(BLOG_DIR)) {

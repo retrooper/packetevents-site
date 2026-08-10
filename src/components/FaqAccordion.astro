@@ -1,249 +1,31 @@
 ---
+import DownwardArrow from "../assets/downward-arrow.svg";
+import {getCollection, render} from "astro:content";
+
+const entries = (await getCollection("faq")).sort((a, b) =>
+    a.data.question.localeCompare(b.data.question));
+const rendered = await Promise.all(entries.map(async (entry) =>
+    ({entry, Content: (await render(entry)).Content})));
 ---
 
 <div class="px-5 w-full flex justify-center">
     <div class="w-full max-w-4xl text-left">
-        <details class="border-b border-zinc-800 group" name="faq" id="faq-1">
-            <summary
-                class="flex items-center justify-between w-full p-5 font-medium text-white hover:bg-zinc-700 gap-3 cursor-pointer list-none"
-            >
-                <span class="font-medium text-lg">
-                    Where can I download the latest PacketEvents release?
-                </span>
-                <svg
-                    class="w-3 h-3 rotate-180 shrink-0 group-open:rotate-0 transition-transform"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5 5 1 1 5"
-                    ></path>
-                </svg>
-            </summary>
-            <div class="p-5 text-zinc-200">
-                <p>
-                    You can download the latest release on{" "}
-                    <a
-                        href="https://modrinth.com/plugin/packetevents"
-                        class="text-indigo-700">Modrinth</a
-                    >.
-                </p>
-            </div>
-        </details>
 
-        <details class="border-b border-zinc-800 group" name="faq" id="faq-2">
-            <summary
-                class="flex items-center justify-between w-full p-5 font-medium text-white hover:bg-zinc-700 gap-3 cursor-pointer list-none"
-            >
-                <span class="font-medium text-lg">
-                    Where can I find PacketEvents development builds?
-                </span>
-                <svg
-                    class="w-3 h-3 rotate-180 shrink-0 group-open:rotate-0 transition-transform"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+        {rendered.map(({entry, Content}) => (
+            <details class="border-b border-b-primary-dark group" name="faq" id={entry.id}>
+                <summary
+                    class="list-none cursor-pointer flex items-center justify-between w-full p-5 font-medium hover:bg-white/10 gap-3 rounded-lg"
                 >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5 5 1 1 5"
-                    ></path>
-                </svg>
-            </summary>
-            <div class="p-5 text-zinc-200">
-                <p>
-                    You can download development builds on{" "}
-                    <a
-                        href="https://ci.codemc.io/job/retrooper/job/packetevents/"
-                        class="text-indigo-700">Jenkins</a
-                    >.
-                </p>
-            </div>
-        </details>
-
-        <details class="border-b border-zinc-800 group" name="faq" id="faq-3">
-            <summary
-                class="flex items-center justify-between w-full p-5 font-medium text-white hover:bg-zinc-700 gap-3 cursor-pointer list-none"
-            >
-                <span class="font-medium text-lg">
-                    What Minecraft version does PacketEvents support?
-                </span>
-                <svg
-                    class="w-3 h-3 rotate-180 shrink-0 group-open:rotate-0 transition-transform"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5 5 1 1 5"
-                    ></path>
-                </svg>
-            </summary>
-            <div class="p-5 text-zinc-200">
-                <p>
-                    PacketEvents supports Minecraft versions
-                    <span class="text-indigo-700"> 1.8</span>-
-                    <span class="text-indigo-700">latest </span>
-                    Java Edition.
-                </p>
-            </div>
-        </details>
-
-        <details class="border-b border-zinc-800 group" name="faq" id="faq-4">
-            <summary
-                class="flex items-center justify-between w-full p-5 font-medium text-white hover:bg-zinc-700 gap-3 cursor-pointer list-none"
-            >
-                <span class="font-medium text-lg">
-                    Where can I learn to use PacketEvents?
-                </span>
-                <svg
-                    class="w-3 h-3 rotate-180 shrink-0 group-open:rotate-0 transition-transform"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5 5 1 1 5"
-                    ></path>
-                </svg>
-            </summary>
-            <div class="p-5 text-zinc-200">
-                <p>Currently, the guide is still being worked on...</p>
-            </div>
-        </details>
-
-        <details class="border-b border-zinc-800 group" name="faq" id="faq-5">
-            <summary
-                class="flex items-center justify-between w-full p-5 font-medium text-white hover:bg-zinc-700 gap-3 cursor-pointer list-none"
-            >
-                <span class="font-medium text-lg">
-                    Is PacketEvents free software?
-                </span>
-                <svg
-                    class="w-3 h-3 rotate-180 shrink-0 group-open:rotate-0 transition-transform"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5 5 1 1 5"
-                    ></path>
-                </svg>
-            </summary>
-            <div class="p-5 text-zinc-200">
-                <p>
-                    Yes, Packet Events is{" "}
-                    <a
-                        target="_"
-                        href="https://www.gnu.org/philosophy/free-sw.en.html"
-                        class="text-indigo-700">Free Software</a
-                    >. It uses the{" "}
-                    <a
-                        target="_"
-                        href="https://www.gnu.org/licenses/gpl-3.0.en.html"
-                        class="text-indigo-700">GPLv3</a
-                    >{" "}
-                    license.
-                </p>
-            </div>
-        </details>
-
-        <details class="border-b border-zinc-800 group" name="faq" id="faq-6">
-            <summary
-                class="flex items-center justify-between w-full p-5 font-medium text-white hover:bg-zinc-700 gap-3 cursor-pointer list-none"
-            >
-                <span class="font-medium text-lg">
-                    Does PacketEvents have a Discord server?
-                </span>
-                <svg
-                    class="w-3 h-3 rotate-180 shrink-0 group-open:rotate-0 transition-transform"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5 5 1 1 5"
-                    ></path>
-                </svg>
-            </summary>
-            <div class="p-5 text-zinc-200">
-                <p>
-                    Join the
-                    <a
-                        href="https://discord.gg/DVHxPPxHZc"
-                        class="text-indigo-700"> PacketEvents Discord Server </a
-                    >
-                    and receive community support!
-                </p>
-            </div>
-        </details>
-
-        <details class="border-b border-zinc-800 group" name="faq" id="faq-7">
-            <summary
-                class="flex items-center justify-between w-full p-5 font-medium text-white hover:bg-zinc-700 gap-3 cursor-pointer list-none"
-            >
-                <span class="font-medium text-lg">
-                    Should I ship PacketEvents with my project?
-                </span>
-                <svg
-                    class="w-3 h-3 rotate-180 shrink-0 group-open:rotate-0 transition-transform"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5 5 1 1 5"
-                    ></path>
-                </svg>
-            </summary>
-            <div class="p-5 text-zinc-200">
-                <p class="text-red-300">
-                    It's best to avoid shipping PacketEvents with your project.
-                </p>
-                <p>
-                    Ensuring your users only run a single instance of
-                    PacketEvents will not only
-                    <span class="text-indigo-300"> boost performance</span>,
-                    but also <span class="text-indigo-300">streamline bug-reporting</span>.
-                    Plus, you'll save time by not needing to update
-                    with every new patch release.
-                </p>
-            </div>
-        </details>
+                    <span class="text-lg">{entry.data.question}</span>
+                    <DownwardArrow
+                        class="w-3 h-3 not-group-open:rotate-180 group-open:rotate-0 transition-transform"
+                        aria-hidden="true"
+                    />
+                </summary>
+                <div class="p-5 opacity-90 blog-content">
+                    <Content/>
+                </div>
+            </details>
+        ))}
     </div>
 </div>

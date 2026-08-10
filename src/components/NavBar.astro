@@ -1,132 +1,100 @@
 ---
-import ArrowUpRightFromSquare from "../assets/arrow-up-right-from-square.svg"
 import DiscordSymbolWhite from "../assets/Discord-Symbol-White.svg"
 import GithubMark from "../assets/mark-github-24.svg"
+import Hamburger from "../assets/hamburger.svg"
+import LinkButton from "./common/LinkButton.astro";
 ---
 
-<nav class="bg-zinc-900 fixed w-screen max-w-full z-20 top-0 start-0">
-    <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-    >
+<nav class="w-screen max-w-full">
+    <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
-            class="text-2xl font-medium text-white hover:text-indigo-700"
+            class="text-2xl font-medium hover:text-primary transition-colors"
             href="/"
         >
             packetevents
         </a>
 
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <div class="gap-3 mr-5 hidden md:flex items-center">
-                <a href="https://discord.gg/DVHxPPxHZc" target="_">
-                    <DiscordSymbolWhite aria-label="Discord" class="w-7 cursor-pointer"/>
+        <input id="nav-toggle" type="checkbox" class="peer hidden"/>
+        <div class="flex gap-3 md:order-2">
+            <div class="gap-3 hidden md:flex items-center">
+                <a href="https://discord.gg/DVHxPPxHZc" target="_" aria-label="Discord">
+                    <DiscordSymbolWhite class="w-7 cursor-pointer hover:text-primary transition-colors"/>
                 </a>
-                <a href="https://github.com/retrooper/packetevents" target="_">
-                    <GithubMark aria-label="GitHub" class="w-7 cursor-pointer"/>
+                <a href="https://github.com/retrooper/packetevents" target="_" aria-label="GitHub">
+                    <GithubMark class="w-7 cursor-pointer hover:text-primary transition-colors"/>
                 </a>
             </div>
-            <a
-                href="https://docs.packetevents.com/getting-started"
-                target="_"
-                class="hidden xs:block text-white bg-indigo-800 hover:bg-indigo-700 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            <LinkButton
+                href="https://docs.packetevents.com/getting-started" target="_"
+                class="hidden xs:block text-sm font-medium"
+                color="primary" external
             >
-                Get started
-            </a>
-            <button
-                id="nav-toggle"
-                type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-zinc-800 focus:outline-2 focus:outline-zinc-200"
+                <span>Get started</span>
+            </LinkButton>
+            <label
+                for="nav-toggle"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary-light rounded-lg md:hidden hover:bg-white/10 cursor-pointer"
                 aria-controls="nav-menu"
                 aria-expanded="false"
-                aria-label="Open main menu"
+                aria-label="Open nav menu"
             >
-                <svg
-                    class="w-5 h-5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 17 14"
-                >
-                    <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15"
-                    >
-                    </path>
-                </svg>
-            </button>
+                <Hamburger class="w-5 h-5" aria-hidden/>
+            </label>
         </div>
 
         <div
             id="nav-menu"
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            class="items-center justify-between not-md:not-peer-checked:hidden w-full md:flex md:w-auto md:order-1"
         >
             <ul
-                class="flex flex-col p-4 mt-4 font-medium rounded-lg bg-zinc-800 md:space-x-8 md:flex-row md:mt-0 md:bg-zinc-900"
+                class="flex flex-col p-4 not-md:gap-3 mt-4 md:mt-0 font-medium rounded-lg not-md:bg-white/10 md:flex-row"
             >
-                <li class="flex items-center group cursor-pointer">
-                    <a
-                        href="https://docs.packetevents.com/"
-                        target="_"
-                        class="block py-2 px-3 text-white rounded hover:bg-zinc-900 md:hover:bg-transparent md:group-hover:text-indigo-700 md:p-0"
+                <li>
+                    <LinkButton
+                        href="https://docs.packetevents.com/" target="_"
+                        color="invisible" external
                     >
-                        Docs
-                    </a>
-                    <ArrowUpRightFromSquare class="h-3.5 inline ml-2 group-hover:text-indigo-700" aria-hidden/>
-                </li>
-                <li class="flex items-center group cursor-pointer">
-                    <a
-                        href="https://github.com/retrooper/packetevents-example"
-                        target="_"
-                        class="block py-2 px-3 text-white rounded hover:bg-zinc-900 md:hover:bg-transparent md:group-hover:text-indigo-700 md:p-0"
-                    >
-                        Examples
-                    </a>
-                    <ArrowUpRightFromSquare class="h-3.5 inline ml-2 group-hover:text-indigo-700" aria-hidden/>
+                        <span>Docs</span>
+                    </LinkButton>
                 </li>
                 <li>
-                    <a
-                        href="/blog"
-                        class="block py-2 px-3 text-white rounded hover:bg-zinc-900 md:hover:bg-transparent md:hover:text-indigo-700 md:p-0"
+                    <LinkButton
+                        href="https://github.com/retrooper/packetevents-example" target="_"
+                        color="invisible" external
                     >
+                        <span>Examples</span>
+                    </LinkButton>
+                </li>
+                <li>
+                    <LinkButton color="invisible" href="/blog">
                         Blog
-                    </a>
+                    </LinkButton>
                 </li>
                 <li class="block xs:hidden w-full">
-                    <a
-                        href="https://docs.packetevents.com/getting-started"
-                        target="_"
-                        class="block w-full text-white bg-indigo-800 hover:bg-indigo-700 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                    <LinkButton
+                        href="https://docs.packetevents.com/getting-started" target="_"
+                        color="primary" class="justify-center" external
                     >
                         Get started
-                    </a>
+                    </LinkButton>
                 </li>
-                <li class="md:hidden mt-2 flex justify-between gap-3">
-                    <a
-                        class="w-1/2 bg-zinc-900 px-3 py-2 rounded-lg flex items-center"
-                        href="https://discord.gg/DVHxPPxHZc"
-                        target="_"
+                <li class="md:hidden flex justify-between gap-3">
+                    <LinkButton
+                        href="https://discord.gg/DVHxPPxHZc" target="_"
+                        color="dark" class="w-1/2"
+                        aria-label="Discord"
                     >
-                        <DiscordSymbolWhite aria-label="Discord" class="w-7 cursor-pointer mx-auto"/>
-                    </a>
-                    <a
-                        class="w-1/2 bg-zinc-900 px-3 py-2 rounded-lg flex items-center"
-                        href="https://github.com/retrooper/packetevents"
-                        target="_"
+                        <DiscordSymbolWhite class="w-7 h-full cursor-pointer mx-auto"/>
+                    </LinkButton>
+                    <LinkButton
+                        href="https://github.com/retrooper/packetevents" target="_"
+                        color="dark" class="w-1/2"
+                        aria-label="GitHub"
                     >
-                        <GithubMark aria-label="GitHub" class="w-7 cursor-pointer mx-auto"/>
-                    </a>
+                        <GithubMark class="w-7 h-full cursor-pointer mx-auto"/>
+                    </LinkButton>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<script>
-    const toggle = document.getElementById("nav-toggle");
-    const menu = document.getElementById("nav-menu");
-    toggle?.addEventListener("click", () => {
-        menu?.classList.toggle("hidden");
-    });
-</script>

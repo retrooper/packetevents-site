@@ -11,26 +11,27 @@
 
 @theme {
     --font-sans: "Poppins", sans-serif;
-    --breakpoint-xs: 24rem;
+    --breakpoint-xs: 30rem;
+
+    --color-primary: var(--color-indigo-500);
+    --color-primary-light: var(--color-zinc-200);
+    --color-primary-dark: var(--color-zinc-900);
+    --color-primary-gray: var(--color-zinc-700);
 }
 
 html {
-    background-color: #18181b;
+    color-scheme: dark;
 }
 
-.blog-content {
-    color: #fff;
-}
 .blog-content ul {
-    list-style-type: disc;
-    padding-left: 1.25rem;
+    @apply list-disc pl-5
 }
 .blog-content p {
-    margin-top: 1.25rem;
+    @apply mt-5
 }
 .blog-content a {
-    color: #6366f1;
+    @apply text-primary
 }
 .blog-content a:hover {
-    text-decoration: underline;
+    @apply underline
 }
