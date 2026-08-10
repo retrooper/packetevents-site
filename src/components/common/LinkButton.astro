@@ -8,12 +8,13 @@ interface Props extends astroHTML.JSX.AnchorHTMLAttributes {
 }
 
 const {color, class: clazz, external, target, ...other} = Astro.props;
+const targetAttr = !target && external ? "_blank" : target;
 ---
 
 <Button
     tag="a" color={color}
     class={`flex items-center ${clazz ?? ""}`}
-    target={!target && external ? "_blank" : target}
+    {...(targetAttr ? {target: targetAttr} : {})}
     {...other}
 >
     <slot/>

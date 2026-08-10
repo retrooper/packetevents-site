@@ -8,7 +8,7 @@ const buttonColors = {
 export type buttonColor = keyof typeof buttonColors
 
 interface Props extends astroHTML.JSX.HTMLAttributes {
-    tag?: string;
+    tag?: "button" | "a";
     color: buttonColor;
     disabled?: boolean;
 }
