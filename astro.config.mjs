@@ -6,10 +6,11 @@ import preact from "@astrojs/preact";
 // https://astro.build/config
 export default defineConfig({
     site: "https://packetevents.com",
+    trailingSlash: "always",
     output: "static",
 
     image: {
-        layout: "constrained"
+        layout: "constrained",
     },
 
     vite: {

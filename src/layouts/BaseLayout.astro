@@ -3,6 +3,7 @@ import "../styles/global.css";
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
 import ClientRouter from "astro/components/ClientRouter.astro";
+import LogoDark from "../assets/logo_dark.png";
 
 interface Props {
     title?: string;
@@ -14,22 +15,31 @@ const title = baseTitle ? `packetevents - ${baseTitle}` : "packetevents";
 
 <!doctype html>
 <html lang="en" transition:animate="none">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-        <ClientRouter/>
-    </head>
-    <body class="font-sans flex flex-col min-h-screen bg-primary-dark text-white antialiased">
-        <NavBar transition:persist />
-        <main class="pt-16 px-10 w-full">
-            <slot />
-        </main>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="generator" content={Astro.generator}/>
+    <link rel="canonical" href={new URL(Astro.url, Astro.site).toString()}/>
 
-        <div class="flex-1"/>
-        <Footer transition:persist />
-    </body>
+    <title>{title}</title>
+    <meta name="description"
+          content="PacketEvents is a protocol library tailored to Minecraft Java Edition, designed to facilitate the processing and transmission of packets."/>
+
+    <meta name="color-scheme" content="dark"/>
+    <meta name="darkreader-lock"/>
+
+    <link rel="icon" href={LogoDark.src}/>
+    <link rel="apple-touch-icon" href={LogoDark.src}/>
+
+    <ClientRouter/>
+</head>
+<body class="font-sans flex flex-col min-h-screen bg-primary-dark text-white antialiased">
+<NavBar transition:persist/>
+<main class="pt-16 px-10 w-full">
+    <slot/>
+</main>
+
+<div class="flex-1"/>
+<Footer transition:persist/>
+</body>
 </html>

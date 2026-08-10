@@ -7,10 +7,15 @@ interface Props extends astroHTML.JSX.AnchorHTMLAttributes {
     external?: boolean;
 }
 
-const {color, class: clazz,external, ...other} = Astro.props
+const {color, class: clazz, external, target, ...other} = Astro.props;
 ---
 
-<Button tag="a" color={color} class={`flex items-center ${clazz??""}`} {...other}>
+<Button
+    tag="a" color={color}
+    class={`flex items-center ${clazz ?? ""}`}
+    target={!target && external ? "_blank" : target}
+    {...other}
+>
     <slot/>
     {external &&
         <ArrowUpRightFromSquare class="h-4 inline ml-2" aria-hidden/>}

@@ -3,29 +3,32 @@ import DiscordSymbolWhite from "../assets/Discord-Symbol-White.svg"
 import GithubMark from "../assets/mark-github-24.svg"
 import Hamburger from "../assets/hamburger.svg"
 import LinkButton from "./common/LinkButton.astro";
+import LogoDark from "../assets/logo_dark.png";
+import Picture from "astro/components/Picture.astro";
 ---
 
 <nav class="w-screen max-w-full">
     <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
-            class="text-2xl font-medium hover:text-primary transition-colors"
+            class="text-2xl font-medium hover:text-primary transition-colors inline-flex items-center gap-4 group"
             href="/"
         >
-            packetevents
+            <Picture src={LogoDark} width={42} alt="packetevents logo" aria-hidden class="rounded group-hover:opacity-70"/>
+            <span>packetevents</span>
         </a>
 
         <input id="nav-toggle" type="checkbox" class="peer hidden"/>
         <div class="flex gap-3 md:order-2">
             <div class="gap-3 hidden md:flex items-center">
-                <a href="https://discord.gg/DVHxPPxHZc" target="_" aria-label="Discord">
+                <a href="https://discord.gg/DVHxPPxHZc" target="_blank" aria-label="Discord">
                     <DiscordSymbolWhite class="w-7 cursor-pointer hover:text-primary transition-colors"/>
                 </a>
-                <a href="https://github.com/retrooper/packetevents" target="_" aria-label="GitHub">
+                <a href="https://github.com/retrooper/packetevents" target="_blank" aria-label="GitHub">
                     <GithubMark class="w-7 cursor-pointer hover:text-primary transition-colors"/>
                 </a>
             </div>
             <LinkButton
-                href="https://docs.packetevents.com/getting-started" target="_"
+                href="https://docs.packetevents.com/getting-started"
                 class="hidden xs:block text-sm font-medium"
                 color="primary" external
             >
@@ -51,7 +54,7 @@ import LinkButton from "./common/LinkButton.astro";
             >
                 <li>
                     <LinkButton
-                        href="https://docs.packetevents.com/" target="_"
+                        href="https://docs.packetevents.com/"
                         color="invisible" external
                     >
                         <span>Docs</span>
@@ -59,20 +62,20 @@ import LinkButton from "./common/LinkButton.astro";
                 </li>
                 <li>
                     <LinkButton
-                        href="https://github.com/retrooper/packetevents-example" target="_"
+                        href="https://github.com/retrooper/packetevents-example"
                         color="invisible" external
                     >
                         <span>Examples</span>
                     </LinkButton>
                 </li>
                 <li>
-                    <LinkButton color="invisible" href="/blog">
+                    <LinkButton color="invisible" href="/blog/">
                         Blog
                     </LinkButton>
                 </li>
                 <li class="block xs:hidden w-full">
                     <LinkButton
-                        href="https://docs.packetevents.com/getting-started" target="_"
+                        href="https://docs.packetevents.com/getting-started"
                         color="primary" class="justify-center" external
                     >
                         Get started
@@ -80,14 +83,14 @@ import LinkButton from "./common/LinkButton.astro";
                 </li>
                 <li class="md:hidden flex justify-between gap-3">
                     <LinkButton
-                        href="https://discord.gg/DVHxPPxHZc" target="_"
+                        href="https://discord.gg/DVHxPPxHZc" target="_blank"
                         color="dark" class="w-1/2"
                         aria-label="Discord"
                     >
                         <DiscordSymbolWhite class="w-7 h-full cursor-pointer mx-auto"/>
                     </LinkButton>
                     <LinkButton
-                        href="https://github.com/retrooper/packetevents" target="_"
+                        href="https://github.com/retrooper/packetevents" target="_blank"
                         color="dark" class="w-1/2"
                         aria-label="GitHub"
                     >
