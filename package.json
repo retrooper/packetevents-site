@@ -10,11 +10,9 @@
     "fetch-release": "node scripts/fetch-release.mjs"
   },
   "dependencies": {
-    "@astrojs/preact": "^6.0.2",
     "@fontsource/poppins": "^5.3.0",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.2.0",
-    "preact": "^10.29.8",
     "tailwindcss": "^4.3.3",
     "zod": "^4.4.3"
   },

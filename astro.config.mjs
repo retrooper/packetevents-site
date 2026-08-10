@@ -1,12 +1,12 @@
 // @ts-check
 import {defineConfig} from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
-import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
     site: "https://packetevents.com",
     trailingSlash: "always",
+    compressHTML: !import.meta.env.DEV,
     output: "static",
 
     image: {
@@ -17,5 +17,7 @@ export default defineConfig({
         plugins: [tailwindcss()],
     },
 
-    integrations: [preact()],
+    build: {
+        inlineStylesheets: "always",
+    },
 });
