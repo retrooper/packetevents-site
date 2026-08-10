@@ -17,7 +17,7 @@ const Tag = href ? "a" : "div";
         {date && <p class="opacity-80 text-sm xs:text-md select-none">
             {date.toLocaleDateString("en-US", {day: "numeric", month: "long", year: "numeric"})}
         </p>}
-        {title && <h3 class={`${href?"text-primary":"text-primary-light"} font-medium xs:text-xl`}>
+        {title && <h3 class={`${href?"text-primary-fg":"text-primary-light"} font-medium xs:text-xl`}>
             {title}
         </h3>}
         <div class={`blog-content ${title || date ? "mt-3" : ""}`}>
