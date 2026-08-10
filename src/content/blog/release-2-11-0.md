@@ -1,13 +1,14 @@
 ---
 title: "Release 2.11.0"
 date: 2025-12-09
+summary: "Adds support for Minecraft 1.21.11."
 ---
 
-# PacketEvents 2.11.0 is finally out! 🎉
+## PacketEvents 2.11.0 is finally out! 🎉
 
 This update adds support for Minecraft 1.21.11.
 
-# Brief Announcement 📢⚠️
+## Brief Announcement 📢⚠️
 
 ### Visit our website: https://packetevents.com
 

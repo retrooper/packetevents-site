@@ -1,6 +1,7 @@
 ---
 title: "Release 2.6.0"
 date: 2024-12-04
+summary: "Adds support for Minecraft 1.21.3."
 ---
 
 - Minecraft 1.21(.3) support

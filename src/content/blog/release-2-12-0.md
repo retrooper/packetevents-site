@@ -1,9 +1,10 @@
 ---
 title: "Release 2.12.0"
 date: 2026-04-05
+summary: "Adds support for Minecraft 26.1, including the new internal modules required by recent changes to Fabric."
 ---
 
-# PacketEvents 2.12.0 is finally out! 🎉
+## PacketEvents 2.12.0 is finally out! 🎉
 
 This update primarily adds support for Minecraft 26.1.
 Again, huge thanks to all users who have donated their hard-earned money to PacketEvents since the previous release. It's been received & it's very much appreciated.
@@ -13,7 +14,7 @@ If you intend on donating and do not wish to be mentioned, please add such a not
 
 Also, thanks to the contributors that made this update possible, especially @booky10. Open-source software thrives when it receives contributions from the community.
 
-# Announcement 📢
+## Announcement 📢
 
 Visit our website: https://packetevents.com
 Documentation: https://docs.packetevents.com

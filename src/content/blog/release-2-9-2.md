@@ -1,13 +1,14 @@
 ---
 title: "Release 2.9.2"
 date: 2025-07-17
+summary: "A patch release fixing UserLoginEvent so it no longer carries null user data, fixing Adventure serializer imports, and adding 1.7.2+ protocol support."
 ---
 
-# PacketEvents 2.9.2 is out now! 🎉
+## PacketEvents 2.9.2 is out now! 🎉
 
 This is a patch update that fixes issues with UserLoginEvent (which previously contained null user data) and with importing Adventure serializers.
 
-# Brief Announcement 📢⚠️
+## Brief Announcement 📢⚠️
 
 ### We have our very own website: https://packetevents.com
 

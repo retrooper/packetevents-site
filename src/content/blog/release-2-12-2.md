@@ -1,9 +1,10 @@
 ---
 title: "Release 2.12.2"
 date: 2026-06-01
+summary: "A patch release with critical bug fixes and optimizations, including a reworked logging system and fixes to packet wrapper transmission across multiple listeners."
 ---
 
-# PacketEvents 2.12.2 is finally out! 🎉
+## PacketEvents 2.12.2 is finally out! 🎉
 
 This patch release contains a few critical bug fixes as well as some optimizations and reworks. 
 

@@ -1,16 +1,17 @@
 ---
 title: "Release 2.12.1"
 date: 2026-04-19
+summary: "Bug fixes for Minecraft 26.1 plus new features, including the WrapperPlayServerChunkBiomes packet, chunk section fluid tracking, and Adventure v5 support."
 ---
 
-# PacketEvents 2.12.1 is finally out! 🎉
+## PacketEvents 2.12.1 is finally out! 🎉
 
 This patch release includes mainly bugfixes related to Minecraft 26.1, but also includes a few smaller features.
 
 Recent donors: **PebbleHost, JustUsBuilds, matsu1213**\
 If you intend on donating and do not wish to be mentioned, please add such a note on your donation.
 
-# Announcement 📢
+## Announcement 📢
 
 Visit our website: https://packetevents.com/ \
 Documentation: https://docs.packetevents.com/ \

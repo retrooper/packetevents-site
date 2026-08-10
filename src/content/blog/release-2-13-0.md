@@ -1,16 +1,17 @@
 ---
 title: "Release 2.13.0"
 date: 2026-06-22
+summary: "Adds support for Minecraft 26.2, with improved chunk reading performance, a new PluginMessage common wrapper, and several bug fixes."
 ---
 
-# PacketEvents 2.13.0 is finally out! 🎉
+## PacketEvents 2.13.0 is finally out! 🎉
 
 This minor release includes mainly support for Minecraft 26.2, but also includes a few smaller fixes and improvements.
 
 Recent donors: **@PebbleHost**\
 If you intend on donating and do not wish to be mentioned, please add such a note on your donation.
 
-# Announcement 📢
+## Announcement 📢
 
 Visit our website: https://packetevents.com/ \
 Documentation: https://docs.packetevents.com/ \

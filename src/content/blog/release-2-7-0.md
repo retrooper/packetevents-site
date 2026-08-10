@@ -1,6 +1,7 @@
 ---
 title: "Release 2.7.0"
 date: 2024-12-11
+summary: "Adds support for Minecraft 1.21.4."
 ---
 
 - Minecraft 1.21(.4) support

@@ -1,13 +1,14 @@
 ---
 title: "Release 2.10.1"
 date: 2025-11-04
+summary: "Fixes particle and entity component handling on Minecraft 1.21.9/1.21.10 and corrects vector multiplication calculations."
 ---
 
-# PacketEvents 2.10.1 is finally out! 🎉
+## PacketEvents 2.10.1 is finally out! 🎉
 
 This update includes some bug fixes.
 
-# Brief Announcement 📢⚠️
+## Brief Announcement 📢⚠️
 
 ### Visit our website: https://packetevents.com
 

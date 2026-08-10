@@ -1,6 +1,7 @@
 ---
 title: "Release 2.4.0"
 date: 2024-02-01
+summary: "Adds minimal support for Minecraft 1.21."
 ---
 
 - Minimal Minecraft 1.21 support

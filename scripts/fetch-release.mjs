@@ -80,7 +80,7 @@ async function generatePost(release) {
     }
     const title = `Release ${version}`;
     const date = formatDate(release.published_at);
-    const body = (release.body ?? "").trim();
+    const body = (release.body ?? "").replace(/^# /gm, "## ").trim();
     const content = `---
 title: "${title}"
 date: ${date}

@@ -1,13 +1,14 @@
 ---
 title: "Release 2.10.0"
 date: 2025-10-19
+summary: "Adds support for Minecraft 1.21.9 and 1.21.10, with bug fixes for TPS reading and PlayerModelType handling, and an updated Adventure API."
 ---
 
-# PacketEvents 2.10.0 is finally out! 🎉
+## PacketEvents 2.10.0 is finally out! 🎉
 
 This update includes critical bug fixes & minor additions to the API.
 
-# Brief Announcement 📢⚠️
+## Brief Announcement 📢⚠️
 
 ### We have our very own website: https://packetevents.com
 

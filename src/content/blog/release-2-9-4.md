@@ -1,13 +1,14 @@
 ---
 title: "Release 2.9.4"
 date: 2025-07-22
+summary: "Minor fixes and API additions, including a SpigotConversionUtil method for entity metadata and fixes for older 1.8 Spigot forks and pre-1.12 world border packets."
 ---
 
-# PacketEvents 2.9.4 is out now! 🎉
+## PacketEvents 2.9.4 is out now! 🎉
 
 This update includes minor bug fixes & minor additions to the API.
 
-# Brief Announcement 📢⚠️
+## Brief Announcement 📢⚠️
 
 ### We have our very own website: https://packetevents.com
 

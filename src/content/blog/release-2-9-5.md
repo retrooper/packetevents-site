@@ -1,13 +1,14 @@
 ---
 title: "Release 2.9.5"
 date: 2025-08-25
+summary: "Critical bug fixes for the Spigot injector, chunk data, NBT tags, and swapped direction axes, plus a new WrapperPlayServerBlockChange constructor."
 ---
 
-# PacketEvents 2.9.5 is out now! 🎉
+## PacketEvents 2.9.5 is out now! 🎉
 
 This update includes critical bug fixes & minor additions to the API.
 
-# Brief Announcement 📢⚠️
+## Brief Announcement 📢⚠️
 
 ### We have our very own website: https://packetevents.com
 

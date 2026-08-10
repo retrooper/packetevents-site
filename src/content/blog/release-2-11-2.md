@@ -1,9 +1,10 @@
 ---
 title: "Release 2.11.2"
 date: 2026-01-27
+summary: "A bug-fix release addressing registry handling, nullability, tag parsing, and several smaller NPEs; updating is encouraged."
 ---
 
-# PacketEvents 2.11.2 is finally out! 🎉
+## PacketEvents 2.11.2 is finally out! 🎉
 
 This update fixes various bugs. It's encouraged that users update.
 Again, huge thanks to all users who have donated their hard-earned money to PacketEvents since the previous release. It's been received & it's very much appreciated.
@@ -14,7 +15,7 @@ Also, thanks to the contributors that made this update possible.
 
 If you intend on donating and do not wish to be mentioned, please add such a note on your donation.
 
-# Announcement 📢⚠️
+## Announcement 📢⚠️
 
 Visit our website: https://packetevents.com
 Documentation: https://docs.packetevents.com

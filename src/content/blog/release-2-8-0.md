@@ -1,6 +1,7 @@
 ---
 title: "Release 2.8.0"
 date: 2025-04-05
+summary: "Adds support for Minecraft 1.21.5."
 ---
 
 - Minecraft 1.21.5 support
