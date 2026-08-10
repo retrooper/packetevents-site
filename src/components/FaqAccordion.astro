@@ -11,11 +11,10 @@ const rendered = await Promise.all(entries.map(async (entry) =>
 
 <div class="px-5 w-full flex justify-center">
     <div class="w-full max-w-4xl text-left">
-
         {rendered.map(({entry, Content}) => (
             <details class="border-b border-b-primary-dark group" name="faq" id={entry.id}>
                 <summary
-                    class="list-none cursor-pointer flex items-center justify-between w-full p-5 font-medium hover:bg-white/10 gap-3 rounded-lg"
+                    class="list-none cursor-pointer flex items-center justify-between w-full p-5 font-medium hover:bg-white/10 group-open:bg-white/10 transition-colors gap-3 not-group-open:rounded-lg group-open:rounded-t-lg"
                 >
                     <span class="text-lg">{entry.data.question}</span>
                     <DownwardArrow
@@ -23,7 +22,8 @@ const rendered = await Promise.all(entries.map(async (entry) =>
                         aria-hidden="true"
                     />
                 </summary>
-                <div class="p-5 opacity-90 blog-content">
+                {/* pt[0.1px] is a hackfix as otherwise the margin of the inner paragraph element would exceed the div container for some reason */}
+                <div class="px-5 pb-5 pt-[0.1px] opacity-90 blog-content bg-white/10 rounded-b-lg">
                     <Content/>
                 </div>
             </details>

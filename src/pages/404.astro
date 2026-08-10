@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import LinkButton from "../components/common/LinkButton.astro";
 ---
 
 <BaseLayout title="Page Not Found" noindex>
@@ -8,11 +9,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <h1 class="text-white text-7xl font-medium">Uh oh!</h1>
             <h2 class="text-primary-light text-xl">This page doesn't exist.</h2>
         </div>
-        <a
-            class="px-5 py-3 bg-primary hover:bg-primary/80 rounded-lg transition-colors"
-            href="/"
-        >
-            Go Back
-        </a>
+        <LinkButton href="/" color="primary">Go Back</LinkButton>
     </section>
 </BaseLayout>

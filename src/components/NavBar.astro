@@ -13,7 +13,7 @@ import Picture from "astro/components/Picture.astro";
             class="text-2xl font-medium hover:text-primary-fg transition-colors inline-flex items-center gap-4 group"
             href="/"
         >
-            <Picture src={LogoDark} width={42} alt="packetevents logo" aria-hidden class="rounded group-hover:opacity-70"/>
+            <Picture src={LogoDark} width={42} alt="packetevents logo" aria-hidden class="rounded group-hover:opacity-70 transition-opacity"/>
             <span>packetevents</span>
         </a>
 
@@ -38,7 +38,7 @@ import Picture from "astro/components/Picture.astro";
                 for="nav-toggle"
                 role="button"
                 tabindex="0"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary-light rounded-lg md:hidden hover:bg-white/10 cursor-pointer"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary-light rounded-lg md:hidden hover:bg-white/10 transition-colors cursor-pointer"
                 aria-controls="nav-menu"
                 aria-expanded="false"
                 aria-label="Toggle navigation menu"
