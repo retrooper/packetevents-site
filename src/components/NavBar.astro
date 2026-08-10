@@ -36,10 +36,12 @@ import Picture from "astro/components/Picture.astro";
             </LinkButton>
             <label
                 for="nav-toggle"
+                role="button"
+                tabindex="0"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary-light rounded-lg md:hidden hover:bg-white/10 cursor-pointer"
                 aria-controls="nav-menu"
                 aria-expanded="false"
-                aria-label="Open nav menu"
+                aria-label="Toggle navigation menu"
             >
                 <Hamburger class="w-5 h-5" aria-hidden/>
             </label>
