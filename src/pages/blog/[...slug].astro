@@ -4,6 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import type {GetStaticPathsResult} from "astro";
 import LinkButton from "../../components/common/LinkButton.astro";
 import {absoluteUrl, blogPosting, breadcrumb} from "../../scripts/seo.ts";
+import "../../styles/markdown.css";
 
 export const getStaticPaths = async (): Promise<GetStaticPathsResult> => {
     const posts = await getCollection("blog");

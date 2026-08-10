@@ -1,6 +1,7 @@
 ---
 import DownwardArrow from "../assets/downward-arrow.svg";
 import {getCollection, render} from "astro:content";
+import "../styles/markdown.css";
 
 const entries = (await getCollection("faq")).sort((a, b) =>
     a.data.question.localeCompare(b.data.question));

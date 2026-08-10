@@ -1,0 +1,29 @@
+@reference "./global.css";
+
+.blog-content ul {
+    @apply list-disc pl-5;
+}
+.blog-content h2 {
+    @apply mt-8 text-2xl xs:text-3xl font-semibold;
+}
+.blog-content h3 {
+    @apply mt-6 text-xl xs:text-2xl font-medium;
+}
+.blog-content h4 {
+    @apply mt-5 text-lg xs:text-xl font-medium;
+}
+.blog-content h5 {
+    @apply mt-5 text-base xs:text-lg font-medium;
+}
+.blog-content h6 {
+    @apply mt-5 text-base font-medium;
+}
+.blog-content p {
+    @apply mt-5;
+}
+.blog-content a {
+    @apply text-primary-fg;
+}
+.blog-content a:hover {
+    @apply underline;
+}
