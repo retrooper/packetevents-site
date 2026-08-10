@@ -1,8 +1,7 @@
 ---
 import Picture from "astro/components/Picture.astro";
-import grapheneDevelopmentImage from "../assets/graphene_development_image.png"
-import randomDevelopmentImage from "../assets/plugin_development_image.jpg"
-
+import grapheneDevelopmentImage from "../assets/graphene_development_image.png";
+import randomDevelopmentImage from "../assets/plugin_development_image.jpg";
 ---
 
 <section class="w-full max-w-5xl mx-auto mt-10 flex flex-col gap-10">
@@ -19,7 +18,8 @@ import randomDevelopmentImage from "../assets/plugin_development_image.jpg"
             </p>
         </div>
         <div class="md:w-1/2 rounded-lg overflow-hidden">
-            <Picture src={randomDevelopmentImage} formats={["avif","webp"]} alt="A Laptop with some random source code on the screen"/>
+            <Picture src={randomDevelopmentImage} formats={["avif", "webp"]} width={512}
+                     sizes="(min-width: 768px) 50vw, 100vw" alt="A Laptop with some random source code on the screen"/>
         </div>
     </div>
 
@@ -31,7 +31,8 @@ import randomDevelopmentImage from "../assets/plugin_development_image.jpg"
             </p>
         </div>
         <div class="md:w-1/2 rounded-lg overflow-hidden">
-            <Picture  src={grapheneDevelopmentImage} formats={["avif","webp"]} alt="Graphene development"/>
+            <Picture src={grapheneDevelopmentImage} formats={["avif", "webp"]} width={512}
+                     sizes="(min-width: 768px) 50vw, 100vw" alt="Graphene development"/>
         </div>
     </div>
 </section>
