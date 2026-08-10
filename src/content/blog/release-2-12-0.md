@@ -21,8 +21,9 @@ Documentation: https://docs.packetevents.com
 JavaDocs: https://javadocs.packetevents.com
 
 ## What's Changed (Summary)
-* Added support for Minecraft 26.1 (and 26.1.1)
-* Added support for changes to Fabric, leading to the addition of new internal modules.
+
+- Added support for Minecraft 26.1 (and 26.1.1)
+- Added support for changes to Fabric, leading to the addition of new internal modules.
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.11.2...v2.12.0
 

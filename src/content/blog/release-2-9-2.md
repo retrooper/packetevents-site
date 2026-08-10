@@ -18,9 +18,9 @@ This is a patch update that fixes issues with UserLoginEvent (which previously c
 
 ## What's Changed (Summary)
 
-* Added support for 1.7.2+ Minecraft protocol (useful for proxies)
-* Fixed UserLoginEvent. It is now (always) triggered by PlayerJoinEvent to prevent User instances from containing null data.
-* Fixed importing Adventure serializers.
+- Added support for 1.7.2+ Minecraft protocol (useful for proxies)
+- Fixed UserLoginEvent. It is now (always) triggered by PlayerJoinEvent to prevent User instances from containing null data.
+- Fixed importing Adventure serializers.
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.9.1...v2.9.2
 

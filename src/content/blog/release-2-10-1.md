@@ -18,9 +18,9 @@ This update includes some bug fixes.
 
 ## What's Changed (Summary)
 
-* Fixed certain particle types on 1.21.9 & 1.21.10 Minecraft
-* Fixed the bee's component on 1.21.9 & 1.21.10 Minecraft
-* Correction of 'mul' calculation in LpVector3d
+- Fixed certain particle types on 1.21.9 & 1.21.10 Minecraft
+- Fixed the bee's component on 1.21.9 & 1.21.10 Minecraft
+- Correction of 'mul' calculation in LpVector3d
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.10.0...v2.10.1
 

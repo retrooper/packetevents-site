@@ -18,6 +18,7 @@ Documentation: https://docs.packetevents.com/ \
 Javadoc: https://javadocs.packetevents.com/
 
 Thanks to all contributors which helped make this release possible:
+
 - @Beaness
 - @booky10
 - @ieatglu3
@@ -31,10 +32,10 @@ Thanks to all contributors which helped make this release possible:
 
 ## What's Changed
 
-* Fix minor issues related to 26.1 ([#1483](https://github.com/retrooper/packetevents/pull/1483), [`f2974ec`](https://github.com/retrooper/packetevents/commit/f2974eca7c919ca60266016339991ea0e28a17bb))
-* Add WrapperPlayServerChunkBiomes ([#1383](https://github.com/retrooper/packetevents/pull/1383))
-* Mark 26.1.2 as fully supported ([`4d1938b`](https://github.com/retrooper/packetevents/commit/4d1938b97564633900d3a73061ad137b680e8fa1))
-* Track chunk section fluid count ([#1477](https://github.com/retrooper/packetevents/pull/1477))
-* Add support for adventure v5 ([`bbeec89...c1163ee`](https://github.com/retrooper/packetevents/compare/bbeec896384e22844a51ab28b9bc4c91f8f1daf0...c1163ee7232c9084ae25b3e2e2a6f44d602ec737))
+- Fix minor issues related to 26.1 ([#1483](https://github.com/retrooper/packetevents/pull/1483), [`f2974ec`](https://github.com/retrooper/packetevents/commit/f2974eca7c919ca60266016339991ea0e28a17bb))
+- Add WrapperPlayServerChunkBiomes ([#1383](https://github.com/retrooper/packetevents/pull/1383))
+- Mark 26.1.2 as fully supported ([`4d1938b`](https://github.com/retrooper/packetevents/commit/4d1938b97564633900d3a73061ad137b680e8fa1))
+- Track chunk section fluid count ([#1477](https://github.com/retrooper/packetevents/pull/1477))
+- Add support for adventure v5 ([`bbeec89...c1163ee`](https://github.com/retrooper/packetevents/compare/bbeec896384e22844a51ab28b9bc4c91f8f1daf0...c1163ee7232c9084ae25b3e2e2a6f44d602ec737))
 
 **View Full Changelog**: [`v2.12.0...v2.12.1`](https://github.com/retrooper/packetevents/compare/v2.12.0...v2.12.1)

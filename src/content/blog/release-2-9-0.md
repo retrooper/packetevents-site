@@ -18,9 +18,9 @@ summary: "Adds support for Minecraft 1.21.6 and 1.21.7, with numerous bug fixes.
 
 ## What's Changed? (Summary)
 
-* Added 1.21.6 support
-* Added 1.21.7 support
-* Bug fixes
+- Added 1.21.6 support
+- Added 1.21.7 support
+- Bug fixes
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.8.0...v2.9.0
 

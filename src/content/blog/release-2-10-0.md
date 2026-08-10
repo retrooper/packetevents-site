@@ -18,9 +18,9 @@ This update includes critical bug fixes & minor additions to the API.
 
 ## What's Changed (Summary)
 
-* Added 1.21.9 & 1.21.10 support
-* Various bug fixes (such as TPS reading, PlayerModelType reading/writing, and more)
-* Update adventure API
+- Added 1.21.9 & 1.21.10 support
+- Various bug fixes (such as TPS reading, PlayerModelType reading/writing, and more)
+- Update adventure API
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.9.5...v2.10.0
 

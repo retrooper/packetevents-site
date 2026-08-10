@@ -18,12 +18,12 @@ This update includes critical bug fixes & minor additions to the API.
 
 ## What's Changed (Summary)
 
-* Injector bug fix (for Spigot)
-* WolfVariant issue fixed
-* Chunk Data error fixed
-* NBT tag issues fixed
-* Direction Y/Z axis being swapped fixed
-* Added WrappedBlockState to constructor of WrapperPlayServerBlockChange
+- Injector bug fix (for Spigot)
+- WolfVariant issue fixed
+- Chunk Data error fixed
+- NBT tag issues fixed
+- Direction Y/Z axis being swapped fixed
+- Added WrappedBlockState to constructor of WrapperPlayServerBlockChange
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.9.4...v2.9.5
 

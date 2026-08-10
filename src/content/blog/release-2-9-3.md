@@ -18,7 +18,7 @@ This is an update that adds support for Minecraft 1.21.8 server builds.
 
 ## What's Changed (Summary)
 
-* Added support for 1.21.8 Minecraft server builds.
+- Added support for 1.21.8 Minecraft server builds.
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.9.2...v2.9.3
 

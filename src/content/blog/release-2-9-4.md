@@ -18,9 +18,9 @@ This update includes minor bug fixes & minor additions to the API.
 
 ## What's Changed (Summary)
 
-* Added SpigotConversionUtil#getEntityMetadata to retrieve metadata from a Bukkit entity.
-* Fixed outdated 1.8 Spigot forks from being unable to load on PacketEvents.
-* Fixed WrapperPlayServerWorldBorder for versions lower than 1.12.
+- Added SpigotConversionUtil#getEntityMetadata to retrieve metadata from a Bukkit entity.
+- Fixed outdated 1.8 Spigot forks from being unable to load on PacketEvents.
+- Fixed WrapperPlayServerWorldBorder for versions lower than 1.12.
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.9.3...v2.9.4
 

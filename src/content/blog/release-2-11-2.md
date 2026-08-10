@@ -23,16 +23,17 @@ JavaDocs: https://javadocs.packetevents.com
 I've released a new YouTube [video](https://youtu.be/G7qYRHpZVIo).
 
 ## What's Changed (Summary)
-* Fixed SynchronizedRegistriesHandler issues
-* Fixed various equality/nullability issues with Registry values
-* Explicitly specify 'Locale#ROOT' for all String#toLowerCaser() calls
-* Removed 'end skylight' for 1.21.8 and below
-* Log warning message when failing to uninject from velocity initializer
-* Recommend release builds (and fallback to development builds) to users who run outdated software.
-* Add 'CHAIN' to the 'CHAINS' tag
-* Add new offset(Blockface face, int i) method to Vector3f/d/i classes
-* Fixed 'infiniburn' tag parsing for 1.18.1 and older
-* Fixed unexpected NPE if bukkit entity is null during unsafe lookup
+
+- Fixed SynchronizedRegistriesHandler issues
+- Fixed various equality/nullability issues with Registry values
+- Explicitly specify 'Locale#ROOT' for all String#toLowerCaser() calls
+- Removed 'end skylight' for 1.21.8 and below
+- Log warning message when failing to uninject from velocity initializer
+- Recommend release builds (and fallback to development builds) to users who run outdated software.
+- Add 'CHAIN' to the 'CHAINS' tag
+- Add new offset(Blockface face, int i) method to Vector3f/d/i classes
+- Fixed 'infiniburn' tag parsing for 1.18.1 and older
+- Fixed unexpected NPE if bukkit entity is null during unsafe lookup
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.11.1...v2.11.2
 

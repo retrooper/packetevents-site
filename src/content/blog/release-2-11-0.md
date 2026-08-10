@@ -18,7 +18,7 @@ This update adds support for Minecraft 1.21.11.
 
 ## What's Changed (Summary)
 
-* Added support for Minecraft 1.21.11
+- Added support for Minecraft 1.21.11
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.10.1...v2.11.0
 

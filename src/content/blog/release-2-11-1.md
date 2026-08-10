@@ -22,11 +22,12 @@ If you intend on donating and do not wish to be mentioned, please add such a not
 ### JavaDocs: https://javadocs.packetevents.com
 
 ## What's Changed (Summary)
-* Fixed 'Can't resolve 'minecraft:day' in 'minecraft:timeline' for V_1_21_11'
-* Fixed decoding & encoding for WrapperLoginServerPluginRequest & WrapperLoginClientPluginResponse 
-* Improve StateTypes testing
-* Added system property packetevents.debug.nbt-codec-trace
-* Fixed Sound Codec
+
+- Fixed 'Can't resolve 'minecraft:day' in 'minecraft:timeline' for V_1_21_11'
+- Fixed decoding & encoding for WrapperLoginServerPluginRequest & WrapperLoginClientPluginResponse
+- Improve StateTypes testing
+- Added system property packetevents.debug.nbt-codec-trace
+- Fixed Sound Codec
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.11.0...v2.11.1
 

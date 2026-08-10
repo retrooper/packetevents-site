@@ -20,9 +20,9 @@ This is a hotfix patch update to fix issues with 2.9.0 release assets. See below
 
 ## What's Changed? (Summary)
 
-* Added 1.21.6 support
-* Added 1.21.7 support
-* Bug fixes
+- Added 1.21.6 support
+- Added 1.21.7 support
+- Bug fixes
 
 **View Full Changelog**: https://github.com/retrooper/packetevents/compare/v2.8.0...v2.9.1
 
