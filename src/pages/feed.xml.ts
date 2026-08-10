@@ -16,7 +16,8 @@ export const GET: APIRoute = async ({site}) => {
             channel: {
                 title: "packetevents",
                 link: `${base}/blog/`,
-                description: "Latest news and releases for PacketEvents, a Minecraft Java Edition protocol library.",
+                description:
+                    "Latest news and releases for PacketEvents, a Minecraft Java Edition protocol library.",
                 "atom:link": {
                     "@_href": `${base}/feed.xml`,
                     "@_rel": "self",

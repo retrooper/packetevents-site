@@ -1,11 +1,9 @@
 import type {APIRoute, GetStaticPathsResult} from "astro";
 
-const redirects = [
-    "/discord https://discord.gg/DVHxPPxHZc",
-];
+const redirects = ["/discord https://discord.gg/DVHxPPxHZc"];
 
 export const getStaticPaths = async (): Promise<GetStaticPathsResult> => {
-    return [{params: {"_redirects": "_redirects"}}];
+    return [{params: {_redirects: "_redirects"}}];
 };
 
 export const GET: APIRoute = () => {
